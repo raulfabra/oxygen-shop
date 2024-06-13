@@ -1,0 +1,38 @@
+.sales {
+    padding: 4em;
+
+
+    &__title {
+        padding: .5em;
+        font-family: $font_title;
+        font-weight: 400;
+        line-height: 41px;
+        color: #000000;
+    }
+
+    &__description {
+        padding: .5em;
+        font-family: $font_text;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    &__button {
+        margin-top: 2em;
+        padding: 1.2em 2em;
+        width: 100%;
+
+        font-family: $font_text;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+
+        border: none;
+        background-color: $color;
+        box-shadow: 5px 10px 14px 0px #07ACE64A;
+        border-radius: 2em;
+
+
+    }
+}
