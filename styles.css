@@ -15,7 +15,7 @@ header {
 }
 header .header__title {
   display: inline;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   line-height: 37px;
   color: #08A6E4;
@@ -23,6 +23,40 @@ header .header__title {
 header .header__icon {
   display: inline;
   margin-left: 6em;
+}
+
+main {
+  text-align: center;
+}
+main .sales {
+  padding: 4em;
+}
+main .sales__title {
+  padding: 0.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 41px;
+  color: #000000;
+}
+main .sales__description {
+  padding: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+}
+main .sales__button {
+  margin-top: 2em;
+  padding: 1.2em 2em;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+  border-radius: 2em;
 }
 
 /*# sourceMappingURL=styles.css.map */
