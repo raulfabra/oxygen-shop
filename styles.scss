@@ -1,0 +1,81 @@
+//Variables
+$font_title: "Raleway", sans-serif;
+$font_text: "Open Sans", sans-serif;
+$color: #08A6E4;
+//Imports
+
+//mixins
+
+//herencia
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 3px 6px 0px #0000004A;
+
+    .header__title {
+        display: inline;
+        font-family: $font_title;
+        font-weight: 300;
+        line-height: 37px;
+        color: $color;
+    }
+
+    .header__icon {
+        display: inline;
+        margin-left: 6em;
+    }
+}
+
+main {
+    text-align: center;
+
+    .sales {
+        padding: 4em;
+
+
+        &__title {
+            padding: .5em;
+            font-family: $font_title;
+            font-weight: 400;
+            line-height: 41px;
+            color: #000000;
+        }
+
+        &__description {
+            padding: .5em;
+            font-family: $font_text;
+            font-weight: 400;
+            line-height: 23px;
+        }
+
+        &__button {
+            margin-top: 2em;
+            padding: 1.2em 2em;
+            width: 100%;
+
+            font-family: $font_text;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+
+            border: none;
+            background-color: $color;
+            box-shadow: 5px 10px 14px 0px #07ACE64A;
+            border-radius: 2em;
+
+
+        }
+    }
+}
