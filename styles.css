@@ -34,9 +34,9 @@ main .sales {
 main .sales__title {
   padding: 0.5em;
   font-family: "Raleway", sans-serif;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 41px;
-  color: #000000;
 }
 main .sales__description {
   padding: 0.5em;
@@ -58,10 +58,42 @@ main .sales__button {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   border-radius: 2em;
 }
-
-/* // Image: Background;
-background: url("Background.png");
-background-size: cover;
- */
+main .salesPlatform {
+  position: relative;
+}
+main .salesPlatform__person {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+main .salesPlatform__eye {
+  position: absolute;
+  top: 6%;
+  left: 47%;
+}
+main .salesPlatform__catalog {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+}
+main .salesPlatform__value {
+  padding: 0.6em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 24px;
+}
+main .salesPlatform__text {
+  padding: 0.6em 0.6em 0.8em 0.6em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: #A5A5A5;
+}
+main .salesPlatform__text--small {
+  margin: 0 auto;
+  width: 45%;
+}
 
 /*# sourceMappingURL=styles.css.map */

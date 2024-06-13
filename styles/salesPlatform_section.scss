@@ -1,0 +1,46 @@
+.salesPlatform {
+    position: relative;
+
+    &__person {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+    }
+
+    &__eye {
+        position: absolute;
+        top: 6%;
+        left: 47%;
+    }
+
+    &__catalog {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+    }
+
+    &__value {
+        padding: .6em;
+
+        font-family: $font_title;
+        font-size: 1.3rem;
+        font-weight: 800;
+        line-height: 24px;
+    }
+
+    &__text {
+        padding: .6em .6em .8em .6em;
+
+        font-family: $font_title;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 20px;
+
+        color: #A5A5A5;
+    }
+
+    &__text--small {
+        margin: 0 auto;
+        width: 45%;
+    }
+}
