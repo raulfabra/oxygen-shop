@@ -58,6 +58,9 @@ main .sales__button {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   border-radius: 2em;
 }
+main .sales__title--margin {
+  margin-bottom: 1em;
+}
 main .salesPlatform {
   position: relative;
 }
