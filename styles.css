@@ -5,6 +5,7 @@
 }
 
 body {
+  text-align: center;
   min-width: 320px;
 }
 
@@ -25,9 +26,6 @@ header .header__icon {
   margin-left: 6em;
 }
 
-main {
-  text-align: center;
-}
 main .sales {
   padding: 4em;
 }
@@ -97,6 +95,93 @@ main .salesPlatform__text {
 main .salesPlatform__text--small {
   margin: 0 auto;
   width: 45%;
+}
+
+.commercial {
+  padding: 2em;
+  background-color: #F7F7F7;
+}
+.commercial .beAlwaysFirst,
+.commercial .shopLocation,
+.commercial .popularBrand {
+  padding: 2em;
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #E8E9ED;
+  border-radius: 2%;
+}
+.commercial .beAlwaysFirst--filled,
+.commercial .shopLocation--filled,
+.commercial .popularBrand--filled {
+  padding: 2em 2em 0 2em;
+}
+.commercial .beAlwaysFirst__ellipse--red,
+.commercial .shopLocation__ellipse--red,
+.commercial .popularBrand__ellipse--red {
+  position: absolute;
+  top: 5%;
+  left: 55%;
+  z-index: 1;
+}
+.commercial .beAlwaysFirst__item--macbook,
+.commercial .shopLocation__item--macbook,
+.commercial .popularBrand__item--macbook {
+  position: relative;
+  z-index: 3;
+}
+.commercial .beAlwaysFirst__item--iphone,
+.commercial .shopLocation__item--iphone,
+.commercial .popularBrand__item--iphone {
+  position: absolute;
+  top: 12%;
+  left: 28%;
+}
+.commercial .beAlwaysFirst__rectangle--green,
+.commercial .shopLocation__rectangle--green,
+.commercial .popularBrand__rectangle--green {
+  position: relative;
+  width: calc(100% + 4em);
+  transform: translateX(-10%);
+  border: 1px solid #E8E9ED;
+  background-color: #55DFB4;
+}
+.commercial .beAlwaysFirst__item--trumpet,
+.commercial .shopLocation__item--trumpet,
+.commercial .popularBrand__item--trumpet {
+  position: absolute;
+  top: 65%;
+  right: 10%;
+  left: 0;
+  z-index: 5;
+}
+.commercial .beAlwaysFirst__title,
+.commercial .shopLocation__title,
+.commercial .popularBrand__title {
+  padding: 1em 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: left;
+}
+.commercial .beAlwaysFirst__description,
+.commercial .shopLocation__description,
+.commercial .popularBrand__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  text-align: left;
+}
+.commercial .beAlwaysFirst__title--brand,
+.commercial .shopLocation__title--brand,
+.commercial .popularBrand__title--brand {
+  padding: 0.4em 0 1em 0;
+}
+.commercial .beAlwaysFirst__description--brand,
+.commercial .shopLocation__description--brand,
+.commercial .popularBrand__description--brand {
+  padding-bottom: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

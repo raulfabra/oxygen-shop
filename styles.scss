@@ -15,16 +15,20 @@ $color: #08A6E4;
 }
 
 body {
+    text-align: center;
     min-width: 320px;
 }
 
 @import './styles/header.scss';
 
 main {
-    text-align: center;
 
     @import './styles/sales_section.scss';
 
     @import './styles/salesPlatform_section.scss';
 
+
+
 }
+
+@import './styles/commercial_section.scss';

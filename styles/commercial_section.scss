@@ -1,0 +1,80 @@
+.commercial {
+    padding: 2em;
+    background-color: #F7F7F7;
+
+    .beAlwaysFirst,
+    .shopLocation,
+    .popularBrand {
+        padding: 2em;
+        position: relative;
+        background-color: #FFFFFF;
+        border: 1px solid #E8E9ED;
+        border-radius: 2%;
+
+        &--filled {
+            padding: 2em 2em 0 2em;
+        }
+
+
+        &__ellipse--red {
+            position: absolute;
+            top: 5%;
+            left: 55%;
+            z-index: 1;
+        }
+
+        &__item--macbook {
+            position: relative;
+            z-index: 3;
+        }
+
+        &__item--iphone {
+            position: absolute;
+            top: 12%;
+            left: 28%;
+        }
+
+        &__rectangle--green {
+            position: relative;
+
+            width: calc(100% + 4em);
+            transform: translateX(-10%);
+            border: 1px solid #E8E9ED;
+            background-color: #55DFB4;
+        }
+
+        &__item--trumpet {
+            position: absolute;
+            top: 65%;
+            right: 10%;
+            left: 0;
+            z-index: 5;
+        }
+
+        &__title {
+            padding: 1em 0;
+            font-family: $font_title;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2rem;
+            text-align: left;
+        }
+
+        &__description {
+            font-family: $font_text;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.3rem;
+            text-align: left;
+
+        }
+
+        &__title--brand {
+            padding: 0.4em 0 1em 0;
+        }
+
+        &__description--brand {
+            padding-bottom: 1em;
+        }
+    }
+}
