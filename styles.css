@@ -97,66 +97,66 @@ main .salesPlatform__text--small {
   width: 45%;
 }
 
-.commercial {
+section.commercial {
   padding: 2em;
   background-color: #F7F7F7;
 }
-.commercial .beAlwaysFirst,
-.commercial .shopLocation,
-.commercial .popularBrand {
+section.commercial .beAlwaysFirst,
+section.commercial .shopLocation,
+section.commercial .popularBrand {
   padding: 2em;
   position: relative;
   background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
   border-radius: 2%;
 }
-.commercial .beAlwaysFirst--filled,
-.commercial .shopLocation--filled,
-.commercial .popularBrand--filled {
+section.commercial .beAlwaysFirst--filled,
+section.commercial .shopLocation--filled,
+section.commercial .popularBrand--filled {
   padding: 2em 2em 0 2em;
 }
-.commercial .beAlwaysFirst__ellipse--red,
-.commercial .shopLocation__ellipse--red,
-.commercial .popularBrand__ellipse--red {
+section.commercial .beAlwaysFirst__ellipse--red,
+section.commercial .shopLocation__ellipse--red,
+section.commercial .popularBrand__ellipse--red {
   position: absolute;
   top: 5%;
   left: 55%;
   z-index: 1;
 }
-.commercial .beAlwaysFirst__item--macbook,
-.commercial .shopLocation__item--macbook,
-.commercial .popularBrand__item--macbook {
+section.commercial .beAlwaysFirst__item--macbook,
+section.commercial .shopLocation__item--macbook,
+section.commercial .popularBrand__item--macbook {
   position: relative;
   z-index: 3;
 }
-.commercial .beAlwaysFirst__item--iphone,
-.commercial .shopLocation__item--iphone,
-.commercial .popularBrand__item--iphone {
+section.commercial .beAlwaysFirst__item--iphone,
+section.commercial .shopLocation__item--iphone,
+section.commercial .popularBrand__item--iphone {
   position: absolute;
   top: 12%;
   left: 28%;
 }
-.commercial .beAlwaysFirst__rectangle--green,
-.commercial .shopLocation__rectangle--green,
-.commercial .popularBrand__rectangle--green {
+section.commercial .beAlwaysFirst__rectangle--green,
+section.commercial .shopLocation__rectangle--green,
+section.commercial .popularBrand__rectangle--green {
   position: relative;
   width: calc(100% + 64px);
   transform: translateX(-10%);
   border: 1px solid #E8E9ED;
   background-color: #55DFB4;
 }
-.commercial .beAlwaysFirst__item--trumpet,
-.commercial .shopLocation__item--trumpet,
-.commercial .popularBrand__item--trumpet {
+section.commercial .beAlwaysFirst__item--trumpet,
+section.commercial .shopLocation__item--trumpet,
+section.commercial .popularBrand__item--trumpet {
   position: absolute;
   top: 65%;
   right: 10%;
   left: 0;
   z-index: 5;
 }
-.commercial .beAlwaysFirst__title,
-.commercial .shopLocation__title,
-.commercial .popularBrand__title {
+section.commercial .beAlwaysFirst__title,
+section.commercial .shopLocation__title,
+section.commercial .popularBrand__title {
   padding: 1em 0;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -164,24 +164,28 @@ main .salesPlatform__text--small {
   line-height: 2rem;
   text-align: left;
 }
-.commercial .beAlwaysFirst__description,
-.commercial .shopLocation__description,
-.commercial .popularBrand__description {
+section.commercial .beAlwaysFirst__description,
+section.commercial .shopLocation__description,
+section.commercial .popularBrand__description {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.3rem;
   text-align: left;
 }
-.commercial .beAlwaysFirst__title--brand,
-.commercial .shopLocation__title--brand,
-.commercial .popularBrand__title--brand {
+section.commercial .beAlwaysFirst__title--brand,
+section.commercial .shopLocation__title--brand,
+section.commercial .popularBrand__title--brand {
   padding: 0.4em 0 1em 0;
 }
-.commercial .beAlwaysFirst__description--brand,
-.commercial .shopLocation__description--brand,
-.commercial .popularBrand__description--brand {
+section.commercial .beAlwaysFirst__description--brand,
+section.commercial .shopLocation__description--brand,
+section.commercial .popularBrand__description--brand {
   padding-bottom: 1em;
+}
+
+section.pricing {
+  padding: 3em 1.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
