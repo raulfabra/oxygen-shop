@@ -108,6 +108,12 @@ main .salesPlatform__text--small {
   position: relative;
   background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
+  border-radius: 2%;
+}
+.commercial .beAlwaysFirst--filled,
+.commercial .shopLocation--filled,
+.commercial .popularBrand--filled {
+  padding: 2em 2em 0 2em;
 }
 .commercial .beAlwaysFirst__ellipse--red,
 .commercial .shopLocation__ellipse--red,
@@ -130,20 +136,52 @@ main .salesPlatform__text--small {
   top: 12%;
   left: 28%;
 }
-.commercial .beAlwaysFirst__itemContainer,
-.commercial .shopLocation__itemContainer,
-.commercial .popularBrand__itemContainer {
-  background-color: #55DFB4;
+.commercial .beAlwaysFirst__rectangle--green,
+.commercial .shopLocation__rectangle--green,
+.commercial .popularBrand__rectangle--green {
   position: relative;
+  width: calc(100% + 4em);
+  transform: translateX(-10%);
   border: 1px solid #E8E9ED;
+  background-color: #55DFB4;
 }
-.commercial .beAlwaysFirst__itemContainer--trumpet,
-.commercial .shopLocation__itemContainer--trumpet,
-.commercial .popularBrand__itemContainer--trumpet {
-  background-color: #08A6E4;
-  opacity: 0.3;
-  position: relative;
+.commercial .beAlwaysFirst__item--trumpet,
+.commercial .shopLocation__item--trumpet,
+.commercial .popularBrand__item--trumpet {
+  position: absolute;
+  top: 65%;
   right: 10%;
+  left: 0;
+  z-index: 5;
+}
+.commercial .beAlwaysFirst__title,
+.commercial .shopLocation__title,
+.commercial .popularBrand__title {
+  padding: 1em 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: left;
+}
+.commercial .beAlwaysFirst__description,
+.commercial .shopLocation__description,
+.commercial .popularBrand__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  text-align: left;
+}
+.commercial .beAlwaysFirst__title--brand,
+.commercial .shopLocation__title--brand,
+.commercial .popularBrand__title--brand {
+  padding: 0.4em 0 1em 0;
+}
+.commercial .beAlwaysFirst__description--brand,
+.commercial .shopLocation__description--brand,
+.commercial .popularBrand__description--brand {
+  padding-bottom: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
