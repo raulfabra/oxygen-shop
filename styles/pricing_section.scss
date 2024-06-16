@@ -1,3 +1,70 @@
+// Extends/Herencia
+%common {
+    position: relative;
+    padding: 1.5em .2em 2.5em .2em;
+    width: 100%;
+    border-radius: 10%;
+
+    .columLeft {
+        display: inline-block;
+        width: 45%;
+
+        &__name {
+            font-family: $font_title;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.3rem;
+
+        }
+
+        &__price {
+            font-family: $font_text;
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 3.5rem;
+
+        }
+
+        &__timeLimit {
+            font-family: $font_title;
+            font-size: .8rem;
+            font-weight: 700;
+            line-height: 1rem;
+        }
+    }
+
+    .columRight {
+        display: inline-block;
+        width: 45%;
+        list-style: none;
+        text-align: left;
+
+        font-family: $font_text;
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+
+    }
+
+    .button {
+        padding: 1em 1.3em;
+        width: 40%;
+
+        border-radius: 23px;
+        border: none;
+
+        font-family: $font_text;
+        font-size: .9rem;
+        font-weight: 700;
+        line-height: 1rem;
+        color: #FFFFFF;
+
+        position: absolute;
+        top: 90%;
+        left: 30%;
+    }
+}
+
 .pricing {
     padding: 3em 2em;
     position: relative;
@@ -11,77 +78,54 @@
     }
 
     &__basic {
-        padding: 1.5em .2em 2.5em .2em;
-        width: 100%;
+        @extend %common;
         border: 1px solid #FB3B64;
-        border-radius: 10%;
 
-        .basic__columLeft {
-            display: inline-block;
-            width: 45%;
-
-            position: relative;
+        .columLeft {
             transform: translate(-10%, -80%);
 
-            &__name {
-                font-family: $font_title;
-                font-size: 1.25rem;
-                font-weight: 700;
-                line-height: 1.3rem;
-
+            &__price {
+                color: #FB3B64;
             }
+        }
+
+        .button {
+            background-color: #EB476E;
+        }
+    }
+
+    &__professional {
+        @extend %common;
+        border: 1px solid #07ACE6;
+
+        .columLeft {
+            transform: translate(-5%, -50%);
 
             &__price {
-                font-family: $font_text;
-                font-size: 2.5rem;
-                font-weight: 300;
-                line-height: 3.5rem;
-
-                color: #FB3B64;
-
+                color: #07ACE6;
             }
         }
 
-        .basic__columRight {
-            display: inline-block;
-            width: 45%;
-            list-style: none;
-            text-align: left;
-
-            font-family: $font_text;
-            font-size: .9rem;
-            font-weight: 400;
-            line-height: 1.25rem;
-
-        }
-
-        &__button {
-            padding: 1em 1.3em;
-            width: 40%;
-
-            background-color: #EB476E;
-            border-radius: 23px;
-            border: none;
-
-            font-family: $font_text;
-            font-size: .9rem;
-            font-weight: 700;
-            line-height: 1rem;
-            color: #FFFFFF;
-
-            position: absolute;
-            top: 60%;
-            left: 30%;
+        .button {
+            background-color: #07ACE6;
         }
     }
 
+    &__premium {
+        @extend %common;
+        border: 1px solid #55DFB4;
 
+        .columLeft {
+            transform: translate(-5%, -50%);
 
+            &__price {
+                color: #55DFB4;
+            }
+        }
 
-    .pricing__professional {
-
-        &--left {}
-
-        &--right {}
+        .button {
+            background-color: #55DFB4;
+        }
     }
+
 }

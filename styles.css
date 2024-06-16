@@ -184,6 +184,59 @@ section.commercial .popularBrand__description--brand {
   padding-bottom: 1em;
 }
 
+.pricing__premium, .pricing__professional, .pricing__basic {
+  position: relative;
+  padding: 1.5em 0.2em 2.5em 0.2em;
+  width: 100%;
+  border-radius: 10%;
+}
+.pricing__premium .columLeft, .pricing__professional .columLeft, .pricing__basic .columLeft {
+  display: inline-block;
+  width: 45%;
+}
+.pricing__premium .columLeft__name, .pricing__professional .columLeft__name, .pricing__basic .columLeft__name {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+.pricing__premium .columLeft__price, .pricing__professional .columLeft__price, .pricing__basic .columLeft__price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+.pricing__premium .columLeft__timeLimit, .pricing__professional .columLeft__timeLimit, .pricing__basic .columLeft__timeLimit {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.pricing__premium .columRight, .pricing__professional .columRight, .pricing__basic .columRight {
+  display: inline-block;
+  width: 45%;
+  list-style: none;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.pricing__premium .button, .pricing__professional .button, .pricing__basic .button {
+  padding: 1em 1.3em;
+  width: 40%;
+  border-radius: 23px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #FFFFFF;
+  position: absolute;
+  top: 90%;
+  left: 30%;
+}
+
 .pricing {
   padding: 3em 2em;
   position: relative;
@@ -196,54 +249,40 @@ section.commercial .popularBrand__description--brand {
   line-height: 2.5rem;
 }
 .pricing__basic {
-  padding: 1.5em 0.2em 2.5em 0.2em;
-  width: 100%;
   border: 1px solid #FB3B64;
-  border-radius: 10%;
 }
-.pricing__basic .basic__columLeft {
-  display: inline-block;
-  width: 45%;
-  position: relative;
+.pricing__basic .columLeft {
   transform: translate(-10%, -80%);
 }
-.pricing__basic .basic__columLeft__name {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.3rem;
-}
-.pricing__basic .basic__columLeft__price {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 300;
-  line-height: 3.5rem;
+.pricing__basic .columLeft__price {
   color: #FB3B64;
 }
-.pricing__basic .basic__columRight {
-  display: inline-block;
-  width: 45%;
-  list-style: none;
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-}
-.pricing__basic__button {
-  padding: 1em 1.3em;
-  width: 40%;
+.pricing__basic .button {
   background-color: #EB476E;
-  border-radius: 23px;
-  border: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-  line-height: 1rem;
-  color: #FFFFFF;
-  position: absolute;
-  top: 60%;
-  left: 30%;
+}
+.pricing__professional {
+  border: 1px solid #07ACE6;
+}
+.pricing__professional .columLeft {
+  transform: translate(-5%, -50%);
+}
+.pricing__professional .columLeft__price {
+  color: #07ACE6;
+}
+.pricing__professional .button {
+  background-color: #07ACE6;
+}
+.pricing__premium {
+  border: 1px solid #55DFB4;
+}
+.pricing__premium .columLeft {
+  transform: translate(-5%, -50%);
+}
+.pricing__premium .columLeft__price {
+  color: #55DFB4;
+}
+.pricing__premium .button {
+  background-color: #55DFB4;
 }
 
 /*# sourceMappingURL=styles.css.map */
