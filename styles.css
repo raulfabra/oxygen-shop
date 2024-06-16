@@ -97,66 +97,66 @@ main .salesPlatform__text--small {
   width: 45%;
 }
 
-.commercial {
+section.commercial {
   padding: 2em;
   background-color: #F7F7F7;
 }
-.commercial .beAlwaysFirst,
-.commercial .shopLocation,
-.commercial .popularBrand {
+section.commercial .beAlwaysFirst,
+section.commercial .shopLocation,
+section.commercial .popularBrand {
   padding: 2em;
   position: relative;
   background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
   border-radius: 2%;
 }
-.commercial .beAlwaysFirst--filled,
-.commercial .shopLocation--filled,
-.commercial .popularBrand--filled {
+section.commercial .beAlwaysFirst--filled,
+section.commercial .shopLocation--filled,
+section.commercial .popularBrand--filled {
   padding: 2em 2em 0 2em;
 }
-.commercial .beAlwaysFirst__ellipse--red,
-.commercial .shopLocation__ellipse--red,
-.commercial .popularBrand__ellipse--red {
+section.commercial .beAlwaysFirst__ellipse--red,
+section.commercial .shopLocation__ellipse--red,
+section.commercial .popularBrand__ellipse--red {
   position: absolute;
   top: 5%;
   left: 55%;
   z-index: 1;
 }
-.commercial .beAlwaysFirst__item--macbook,
-.commercial .shopLocation__item--macbook,
-.commercial .popularBrand__item--macbook {
+section.commercial .beAlwaysFirst__item--macbook,
+section.commercial .shopLocation__item--macbook,
+section.commercial .popularBrand__item--macbook {
   position: relative;
   z-index: 3;
 }
-.commercial .beAlwaysFirst__item--iphone,
-.commercial .shopLocation__item--iphone,
-.commercial .popularBrand__item--iphone {
+section.commercial .beAlwaysFirst__item--iphone,
+section.commercial .shopLocation__item--iphone,
+section.commercial .popularBrand__item--iphone {
   position: absolute;
   top: 12%;
   left: 28%;
 }
-.commercial .beAlwaysFirst__rectangle--green,
-.commercial .shopLocation__rectangle--green,
-.commercial .popularBrand__rectangle--green {
+section.commercial .beAlwaysFirst__rectangle--green,
+section.commercial .shopLocation__rectangle--green,
+section.commercial .popularBrand__rectangle--green {
   position: relative;
-  width: calc(100% + 4em);
+  width: calc(100% + 64px);
   transform: translateX(-10%);
   border: 1px solid #E8E9ED;
   background-color: #55DFB4;
 }
-.commercial .beAlwaysFirst__item--trumpet,
-.commercial .shopLocation__item--trumpet,
-.commercial .popularBrand__item--trumpet {
+section.commercial .beAlwaysFirst__item--trumpet,
+section.commercial .shopLocation__item--trumpet,
+section.commercial .popularBrand__item--trumpet {
   position: absolute;
   top: 65%;
   right: 10%;
   left: 0;
   z-index: 5;
 }
-.commercial .beAlwaysFirst__title,
-.commercial .shopLocation__title,
-.commercial .popularBrand__title {
+section.commercial .beAlwaysFirst__title,
+section.commercial .shopLocation__title,
+section.commercial .popularBrand__title {
   padding: 1em 0;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -164,24 +164,125 @@ main .salesPlatform__text--small {
   line-height: 2rem;
   text-align: left;
 }
-.commercial .beAlwaysFirst__description,
-.commercial .shopLocation__description,
-.commercial .popularBrand__description {
+section.commercial .beAlwaysFirst__description,
+section.commercial .shopLocation__description,
+section.commercial .popularBrand__description {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.3rem;
   text-align: left;
 }
-.commercial .beAlwaysFirst__title--brand,
-.commercial .shopLocation__title--brand,
-.commercial .popularBrand__title--brand {
+section.commercial .beAlwaysFirst__title--brand,
+section.commercial .shopLocation__title--brand,
+section.commercial .popularBrand__title--brand {
   padding: 0.4em 0 1em 0;
 }
-.commercial .beAlwaysFirst__description--brand,
-.commercial .shopLocation__description--brand,
-.commercial .popularBrand__description--brand {
+section.commercial .beAlwaysFirst__description--brand,
+section.commercial .shopLocation__description--brand,
+section.commercial .popularBrand__description--brand {
   padding-bottom: 1em;
+}
+
+.pricing__premium, .pricing__professional, .pricing__basic {
+  position: relative;
+  padding: 1.5em 0.2em 2.5em 0.2em;
+  width: 100%;
+  border-radius: 10%;
+}
+.pricing__premium .columLeft, .pricing__professional .columLeft, .pricing__basic .columLeft {
+  display: inline-block;
+  width: 45%;
+}
+.pricing__premium .columLeft__name, .pricing__professional .columLeft__name, .pricing__basic .columLeft__name {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+.pricing__premium .columLeft__price, .pricing__professional .columLeft__price, .pricing__basic .columLeft__price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+.pricing__premium .columLeft__timeLimit, .pricing__professional .columLeft__timeLimit, .pricing__basic .columLeft__timeLimit {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.pricing__premium .columRight, .pricing__professional .columRight, .pricing__basic .columRight {
+  display: inline-block;
+  width: 45%;
+  list-style: none;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+.pricing__premium .button, .pricing__professional .button, .pricing__basic .button {
+  padding: 1em 1.3em;
+  width: 40%;
+  border-radius: 23px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #FFFFFF;
+  position: absolute;
+  top: 90%;
+  left: 30%;
+}
+
+.pricing {
+  padding: 3em 2em;
+  position: relative;
+}
+.pricing__title {
+  padding-bottom: 0.6em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.pricing__basic {
+  border: 1px solid #FB3B64;
+}
+.pricing__basic .columLeft {
+  transform: translate(-10%, -80%);
+}
+.pricing__basic .columLeft__price {
+  color: #FB3B64;
+}
+.pricing__basic .button {
+  background-color: #EB476E;
+}
+.pricing__professional {
+  border: 1px solid #07ACE6;
+}
+.pricing__professional .columLeft {
+  transform: translate(-5%, -50%);
+}
+.pricing__professional .columLeft__price {
+  color: #07ACE6;
+}
+.pricing__professional .button {
+  background-color: #07ACE6;
+}
+.pricing__premium {
+  border: 1px solid #55DFB4;
+}
+.pricing__premium .columLeft {
+  transform: translate(-5%, -50%);
+}
+.pricing__premium .columLeft__price {
+  color: #55DFB4;
+}
+.pricing__premium .button {
+  background-color: #55DFB4;
 }
 
 /*# sourceMappingURL=styles.css.map */

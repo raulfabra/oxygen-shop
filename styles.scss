@@ -2,11 +2,6 @@
 $font_title: "Raleway", sans-serif;
 $font_text: "Open Sans", sans-serif;
 $color: #08A6E4;
-//Imports
-
-//mixins
-
-//herencia
 
 * {
     box-sizing: border-box;
@@ -27,8 +22,13 @@ main {
 
     @import './styles/salesPlatform_section.scss';
 
-
-
 }
 
-@import './styles/commercial_section.scss';
+section.commercial {
+    padding: 2em;
+    background-color: #F7F7F7;
+
+    @import './styles/commercial_section.scss';
+}
+
+@import './styles/pricing_section.scss';

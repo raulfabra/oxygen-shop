@@ -1,0 +1,131 @@
+// Extends/Herencia
+%common {
+    position: relative;
+    padding: 1.5em .2em 2.5em .2em;
+    width: 100%;
+    border-radius: 10%;
+
+    .columLeft {
+        display: inline-block;
+        width: 45%;
+
+        &__name {
+            font-family: $font_title;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.3rem;
+
+        }
+
+        &__price {
+            font-family: $font_text;
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 3.5rem;
+
+        }
+
+        &__timeLimit {
+            font-family: $font_title;
+            font-size: .8rem;
+            font-weight: 700;
+            line-height: 1rem;
+        }
+    }
+
+    .columRight {
+        display: inline-block;
+        width: 45%;
+        list-style: none;
+        text-align: left;
+
+        font-family: $font_text;
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+
+    }
+
+    .button {
+        padding: 1em 1.3em;
+        width: 40%;
+
+        border-radius: 23px;
+        border: none;
+
+        font-family: $font_text;
+        font-size: .9rem;
+        font-weight: 700;
+        line-height: 1rem;
+        color: #FFFFFF;
+
+        position: absolute;
+        top: 90%;
+        left: 30%;
+    }
+}
+
+.pricing {
+    padding: 3em 2em;
+    position: relative;
+
+    &__title {
+        padding-bottom: .6em;
+        font-family: $font_title;
+        font-size: 2.3rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+    }
+
+    &__basic {
+        @extend %common;
+        border: 1px solid #FB3B64;
+
+        .columLeft {
+            transform: translate(-10%, -80%);
+
+            &__price {
+                color: #FB3B64;
+            }
+        }
+
+        .button {
+            background-color: #EB476E;
+        }
+    }
+
+    &__professional {
+        @extend %common;
+        border: 1px solid #07ACE6;
+
+        .columLeft {
+            transform: translate(-5%, -50%);
+
+            &__price {
+                color: #07ACE6;
+            }
+        }
+
+        .button {
+            background-color: #07ACE6;
+        }
+    }
+
+    &__premium {
+        @extend %common;
+        border: 1px solid #55DFB4;
+
+        .columLeft {
+            transform: translate(-5%, -50%);
+
+            &__price {
+                color: #55DFB4;
+            }
+        }
+
+        .button {
+            background-color: #55DFB4;
+        }
+    }
+
+}
