@@ -323,5 +323,29 @@ section.commercial .popularBrand__description--brand {
   display: inline;
   vertical-align: middle;
 }
+.contact__client {
+  text-align: left;
+}
+.contact__client__label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+  color: #08A6E4;
+  margin-bottom: 1.3em;
+}
+.contact__client__fillInput {
+  border: none;
+  border-bottom: 1px solid #95989A;
+  outline: none;
+  padding: 5px 0;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 1.3em;
+}
+.contact__client__submit {
+  text-align: right;
+}
 
 /*# sourceMappingURL=styles.css.map */
