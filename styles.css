@@ -26,23 +26,23 @@ header .header__icon {
   margin-left: 6em;
 }
 
-main .sales {
+.sales {
   padding: 4em;
 }
-main .sales__title {
+.sales__title {
   padding: 0.5em;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 41px;
 }
-main .sales__description {
+.sales__description {
   padding: 0.5em;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 23px;
 }
-main .sales__button {
+.sales__button {
   margin-top: 2em;
   padding: 1.2em 2em;
   width: 100%;
@@ -56,35 +56,36 @@ main .sales__button {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   border-radius: 2em;
 }
-main .sales__title--margin {
+.sales__title--margin {
   margin-bottom: 1em;
 }
-main .salesPlatform {
+
+.salesPlatform {
   position: relative;
 }
-main .salesPlatform__person {
+.salesPlatform__person {
   position: absolute;
   top: 2%;
   left: 50%;
 }
-main .salesPlatform__eye {
+.salesPlatform__eye {
   position: absolute;
   top: 6%;
   left: 47%;
 }
-main .salesPlatform__catalog {
+.salesPlatform__catalog {
   position: absolute;
   top: 5%;
   left: 50%;
 }
-main .salesPlatform__value {
+.salesPlatform__value {
   padding: 0.6em;
   font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   font-weight: 800;
   line-height: 24px;
 }
-main .salesPlatform__text {
+.salesPlatform__text {
   padding: 0.6em 0.6em 0.8em 0.6em;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
@@ -92,71 +93,57 @@ main .salesPlatform__text {
   line-height: 20px;
   color: #A5A5A5;
 }
-main .salesPlatform__text--small {
+.salesPlatform__text--small {
   margin: 0 auto;
   width: 45%;
 }
 
-section.commercial {
+.commercial {
   padding: 2em;
   background-color: #F7F7F7;
 }
-section.commercial .beAlwaysFirst,
-section.commercial .shopLocation,
-section.commercial .popularBrand {
+.commercial__cards {
+  margin-bottom: 2.5em;
   padding: 2em;
   position: relative;
   background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
   border-radius: 2%;
 }
-section.commercial .beAlwaysFirst--filled,
-section.commercial .shopLocation--filled,
-section.commercial .popularBrand--filled {
+.commercial__cards--filled {
   padding: 2em 2em 0 2em;
+  margin-bottom: 0;
 }
-section.commercial .beAlwaysFirst__ellipse--red,
-section.commercial .shopLocation__ellipse--red,
-section.commercial .popularBrand__ellipse--red {
+.commercial__cards__ellipse--red {
   position: absolute;
   top: 5%;
   left: 55%;
   z-index: 1;
 }
-section.commercial .beAlwaysFirst__item--macbook,
-section.commercial .shopLocation__item--macbook,
-section.commercial .popularBrand__item--macbook {
+.commercial__cards__item--macbook {
   position: relative;
   z-index: 3;
 }
-section.commercial .beAlwaysFirst__item--iphone,
-section.commercial .shopLocation__item--iphone,
-section.commercial .popularBrand__item--iphone {
+.commercial__cards__item--iphone {
   position: absolute;
   top: 12%;
   left: 28%;
 }
-section.commercial .beAlwaysFirst__rectangle--green,
-section.commercial .shopLocation__rectangle--green,
-section.commercial .popularBrand__rectangle--green {
+.commercial__cards__rectangle--green {
   position: relative;
   width: calc(100% + 64px);
   transform: translateX(-10%);
   border: 1px solid #E8E9ED;
   background-color: #55DFB4;
 }
-section.commercial .beAlwaysFirst__item--trumpet,
-section.commercial .shopLocation__item--trumpet,
-section.commercial .popularBrand__item--trumpet {
+.commercial__cards__item--trumpet {
   position: absolute;
   top: 65%;
   right: 10%;
   left: 0;
   z-index: 5;
 }
-section.commercial .beAlwaysFirst__title,
-section.commercial .shopLocation__title,
-section.commercial .popularBrand__title {
+.commercial__cards__title {
   padding: 1em 0;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -164,23 +151,17 @@ section.commercial .popularBrand__title {
   line-height: 2rem;
   text-align: left;
 }
-section.commercial .beAlwaysFirst__description,
-section.commercial .shopLocation__description,
-section.commercial .popularBrand__description {
+.commercial__cards__description {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.3rem;
   text-align: left;
 }
-section.commercial .beAlwaysFirst__title--brand,
-section.commercial .shopLocation__title--brand,
-section.commercial .popularBrand__title--brand {
+.commercial__cards__title--brand {
   padding: 0.4em 0 1em 0;
 }
-section.commercial .beAlwaysFirst__description--brand,
-section.commercial .shopLocation__description--brand,
-section.commercial .popularBrand__description--brand {
+.commercial__cards__description--brand {
   padding-bottom: 1em;
 }
 
@@ -222,6 +203,9 @@ section.commercial .popularBrand__description--brand {
   font-weight: 400;
   line-height: 1.25rem;
 }
+.pricing__premium .columRight__item, .pricing__professional .columRight__item, .pricing__basic .columRight__item {
+  margin-bottom: 1.3em;
+}
 .pricing__premium .button, .pricing__professional .button, .pricing__basic .button {
   padding: 1em 1.3em;
   width: 40%;
@@ -249,6 +233,7 @@ section.commercial .popularBrand__description--brand {
   line-height: 2.5rem;
 }
 .pricing__basic {
+  margin-bottom: 2.5em;
   border: 1px solid #FB3B64;
 }
 .pricing__basic .columLeft {
@@ -261,6 +246,7 @@ section.commercial .popularBrand__description--brand {
   background-color: #EB476E;
 }
 .pricing__professional {
+  margin-bottom: 2.5em;
   border: 1px solid #07ACE6;
 }
 .pricing__professional .columLeft {
@@ -304,7 +290,7 @@ section.commercial .popularBrand__description--brand {
   text-align: left;
 }
 .contact__us {
-  padding: 2em 0 1em;
+  padding: 2em 0 2em;
 }
 .contact__us__email, .contact__us__numberPhone {
   text-align: left;
@@ -333,7 +319,7 @@ section.commercial .popularBrand__description--brand {
   line-height: 1rem;
   letter-spacing: 0.2rem;
   color: #08A6E4;
-  margin-bottom: 1.3em;
+  margin-bottom: 3em;
 }
 .contact__client__fillInput {
   border: none;
@@ -342,10 +328,21 @@ section.commercial .popularBrand__description--brand {
   padding: 5px 0;
   font-size: 16px;
   width: 100%;
-  margin-bottom: 1.3em;
+  margin-bottom: 3em;
 }
-.contact__client__submit {
-  text-align: right;
+.contact__client__checkTerms {
+  display: inline-block;
+  vertical-align: top;
+}
+.contact__client__terms {
+  display: inline-block;
+  width: 90%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: left;
+  color: #707070;
 }
 
 /*# sourceMappingURL=styles.css.map */

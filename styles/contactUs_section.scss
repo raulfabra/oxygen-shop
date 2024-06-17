@@ -22,7 +22,7 @@
     }
 
     &__us {
-        padding: 2em 0 1em;
+        padding: 2em 0 2em;
 
         &__email,
         &__numberPhone {
@@ -64,7 +64,7 @@
 
             color: #08A6E4;
 
-            margin-bottom: 1.3em;
+            margin-bottom: 3em;
 
         }
 
@@ -76,11 +76,28 @@
             font-size: 16px;
             width: 100%;
 
-            margin-bottom: 1.3em;
+            margin-bottom: 3em;
         }
 
-        &__submit {
-            text-align: right;
+        &__checkTerms {
+            display: inline-block;
+            vertical-align: top;
         }
+
+        &__terms {
+            display: inline-block;
+            width: 90%;
+            font-family: $font_text;
+            font-size: .7rem;
+            font-weight: 400;
+            line-height: 1rem;
+            text-align: left;
+
+            color: #707070;
+
+
+        }
+
+        &__submit {}
     }
 }
