@@ -44,6 +44,10 @@
         font-weight: 400;
         line-height: 1.25rem;
 
+        &__item {
+            margin-bottom: 1.3em;
+        }
+
     }
 
     .button {
@@ -65,6 +69,7 @@
     }
 }
 
+// Section
 .pricing {
     padding: 3em 2em;
     position: relative;
@@ -79,6 +84,7 @@
 
     &__basic {
         @extend %common;
+        margin-bottom: 2.5em;
         border: 1px solid #FB3B64;
 
         .columLeft {
@@ -96,6 +102,7 @@
 
     &__professional {
         @extend %common;
+        margin-bottom: 2.5em;
         border: 1px solid #07ACE6;
 
         .columLeft {

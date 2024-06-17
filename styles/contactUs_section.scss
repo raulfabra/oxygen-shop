@@ -1,0 +1,122 @@
+.contact {
+    padding: 2em;
+
+    &__title {
+        font-family: $font_title;
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        text-align: left;
+
+        margin-bottom: .25em;
+
+    }
+
+    &__subTitle {
+        font-family: $font_text;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+        text-align: left;
+
+    }
+
+    &__us {
+        padding: 2em 0 2em;
+
+        &__email,
+        &__numberPhone {
+            text-align: left;
+
+            font-family: $font_text;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.2rem;
+            text-align: left;
+
+            color: #A5A5A5;
+
+
+
+            &__icon {
+                display: inline;
+                vertical-align: middle;
+            }
+
+            &__text {
+                display: inline;
+                vertical-align: middle;
+            }
+
+        }
+
+    }
+
+    &__client {
+        text-align: left;
+
+        &__label {
+            font-family: $font_text;
+            font-size: .8rem;
+            font-weight: 600;
+            line-height: 1rem;
+            letter-spacing: .2rem;
+
+            color: #08A6E4;
+
+            margin-bottom: 3em;
+
+        }
+
+        &__fillInput {
+            border: none;
+            border-bottom: 1px solid #95989A;
+            outline: none;
+            padding: 5px 0;
+            font-size: 16px;
+            width: 100%;
+
+            margin-bottom: 3em;
+        }
+
+        &__checkTerms {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        &__terms {
+            display: inline-block;
+            width: 90%;
+            font-family: $font_text;
+            font-size: .7rem;
+            font-weight: 400;
+            line-height: 1rem;
+            text-align: left;
+
+            color: #707070;
+            margin-bottom: 3em;
+
+        }
+
+        &__submit {
+            display: block;
+            margin-left: auto;
+            padding: 1.5em 1.3em;
+            width: 70%;
+
+            border-radius: 23px;
+            border: none;
+
+            font-family: $font_text;
+            font-size: .8rem;
+            font-weight: 700;
+            line-height: 1rem;
+
+            box-shadow: 5px 10px 14px 0px #07ACE64A;
+            background-color: #08A6E4;
+            color: #FFFFFF;
+
+
+        }
+    }
+}
