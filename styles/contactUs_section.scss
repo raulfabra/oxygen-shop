@@ -94,10 +94,29 @@
             text-align: left;
 
             color: #707070;
-
+            margin-bottom: 3em;
 
         }
 
-        &__submit {}
+        &__submit {
+            display: block;
+            margin-left: auto;
+            padding: 1.5em 1.3em;
+            width: 70%;
+
+            border-radius: 23px;
+            border: none;
+
+            font-family: $font_text;
+            font-size: .8rem;
+            font-weight: 700;
+            line-height: 1rem;
+
+            box-shadow: 5px 10px 14px 0px #07ACE64A;
+            background-color: #08A6E4;
+            color: #FFFFFF;
+
+
+        }
     }
 }
