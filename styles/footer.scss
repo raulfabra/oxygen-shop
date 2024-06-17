@@ -1,0 +1,44 @@
+footer {
+    padding: 1em;
+    box-shadow: 0px -5px 40px 0px #00000033;
+
+    .footer__data {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        width: 45%;
+
+        &__title {
+            font-family: $font_title;
+            font-size: 1.7rem;
+            font-weight: 300;
+            line-height: 2rem;
+
+            color: #08A6E4;
+
+        }
+
+        &__subtitle {
+            font-family: $font_text;
+            font-size: .7rem;
+            font-weight: 400;
+            line-height: .8rem;
+
+            color: #A5A5A5;
+
+        }
+
+    }
+
+    .footer__redes {
+        display: inline-block;
+        text-align: right;
+        vertical-align: middle;
+        width: 45%;
+
+        &__icon {
+            margin-left: 1em;
+        }
+    }
+
+}
