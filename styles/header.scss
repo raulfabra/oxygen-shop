@@ -8,11 +8,67 @@ header {
         font-family: $font_title;
         font-weight: 300;
         line-height: 37px;
-        color: $color;
+        color: #08A6E4;
     }
 
     .header__icon {
         display: inline;
         margin-left: 6em;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+
+        .header__title {
+            margin-left: 3em;
+        }
+
+        .header__icon {
+            display: none;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+
+            &__menu {
+                margin-right: 2em;
+
+                display: flex;
+
+                list-style: none;
+                text-transform: uppercase;
+
+                &__item {
+                    margin: 0 4em;
+
+                    font-family: $font_text;
+                    font-size: .7rem;
+                    font-weight: 700;
+                    line-height: 1rem;
+                    letter-spacing: 3.2799999713897705px;
+                    text-align: center;
+
+                    color: #A5A5A5;
+                }
+
+                &__item:hover {
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                    padding-bottom: 1.5em;
+                    border-bottom: 4px solid #08A6E4;
+
+                }
+            }
+        }
+
     }
 }

@@ -1,5 +1,7 @@
 .sales {
-    padding: 4em;
+    margin: 0 auto;
+    padding: 2.5em;
+    max-width: 375px;
 
     &__title {
         padding: .5em;
@@ -28,7 +30,7 @@
         color: #FFFFFF;
 
         border: none;
-        background-color: $color;
+        background-color: #08A6E4;
         box-shadow: 5px 10px 14px 0px #07ACE64A;
         border-radius: 2em;
     }
