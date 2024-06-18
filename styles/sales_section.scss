@@ -39,3 +39,46 @@
         margin-bottom: 1em;
     }
 }
+
+.banner__image {
+    &--mobile {
+        width: 100%;
+    }
+
+    &--laptop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .sales {
+        padding: 1em;
+        max-width: 450px;
+
+        &__title {
+            padding: 2em 0 0 0;
+
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 57px;
+            text-align: center;
+
+
+        }
+
+        &__description {}
+    }
+
+    .banner__image {
+
+        &--mobile {
+            display: none;
+        }
+
+        &--laptop {
+            display: block;
+            width: 100%;
+        }
+    }
+}
