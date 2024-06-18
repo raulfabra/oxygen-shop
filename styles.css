@@ -123,6 +123,9 @@ header .nav {
     line-height: 57px;
     text-align: center;
   }
+  .sales__title--margin {
+    margin-bottom: 2em;
+  }
   .banner__image--mobile {
     display: none;
   }
@@ -142,7 +145,7 @@ header .nav {
 .salesPlatform__eye {
   position: absolute;
   top: 6%;
-  left: 47%;
+  left: 50%;
 }
 .salesPlatform__catalog {
   position: absolute;
@@ -169,6 +172,17 @@ header .nav {
   width: 45%;
 }
 
+@media only screen and (min-width: 1000px) {
+  .sales__platform {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    margin-bottom: 4em;
+  }
+  .salesPlatform__text--small {
+    width: 100%;
+  }
+}
 .commercial {
   padding: 2em;
   background-color: #F7F7F7;
