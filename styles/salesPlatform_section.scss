@@ -10,7 +10,7 @@
     &__eye {
         position: absolute;
         top: 6%;
-        left: 47%;
+        left: 50%;
     }
 
     &__catalog {
@@ -42,5 +42,21 @@
     &__text--small {
         margin: 0 auto;
         width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .sales__platform {
+        display: flex;
+        justify-content: space-around;
+        padding: 4em;
+        margin-bottom: 4em;
+    }
+
+    .salesPlatform {
+        &__text--small {
+            width: 100%;
+        }
     }
 }
