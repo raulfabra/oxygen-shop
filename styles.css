@@ -188,16 +188,12 @@ header .nav {
   background-color: #F7F7F7;
 }
 .commercial__cards {
+  position: relative;
   margin-bottom: 2.5em;
   padding: 2em;
-  position: relative;
   background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
   border-radius: 2%;
-}
-.commercial__cards--filled {
-  padding: 2em 2em 0 2em;
-  margin-bottom: 0;
 }
 .commercial__cards__ellipse--red {
   position: absolute;
@@ -214,21 +210,11 @@ header .nav {
   top: 12%;
   left: 28%;
 }
-.commercial__cards__rectangle--green {
-  position: relative;
-  width: calc(100% + 64px);
-  transform: translateX(-10%);
-  border: 1px solid #E8E9ED;
-  background-color: #55DFB4;
-}
 .commercial__cards__item--trumpet {
-  position: absolute;
-  top: 65%;
-  right: 10%;
-  left: 0;
-  z-index: 5;
+  position: relative;
+  transform: translate(-15%, 25%);
 }
-.commercial__cards__title {
+.commercial__cards .cards__info__title {
   padding: 1em 0;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -236,20 +222,79 @@ header .nav {
   line-height: 2rem;
   text-align: left;
 }
-.commercial__cards__description {
+.commercial__cards .cards__info__description {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.3rem;
   text-align: left;
 }
-.commercial__cards__title--brand {
+.commercial__cards .cards__info__title--brand {
   padding: 0.4em 0 1em 0;
 }
-.commercial__cards__description--brand {
+.commercial__cards .cards__info__description--brand {
   padding-bottom: 1em;
 }
+.commercial__cards--background-rectangle {
+  width: 100%;
+  background-color: #55DFB4;
+}
+.commercial__cards--fillContainer {
+  padding: 2em 2em 0 2em;
+  margin-bottom: 0;
+}
 
+@media only screen and (min-width: 1000px) {
+  .commercial {
+    padding: 8em 10em;
+  }
+  .commercial__cards {
+    margin: 2.5em auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3em;
+    max-width: 1124px;
+  }
+  .commercial__cards__ellipse--red {
+    top: 30%;
+    left: 80%;
+  }
+  .commercial__cards__ellipse--blue {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+  }
+  .commercial__cards__item--macbook {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+  }
+  .commercial__cards__item--iphone {
+    top: 25%;
+    left: 15%;
+  }
+  .commercial__cards .cards__info {
+    width: 45%;
+  }
+  .commercial__cards .cards__info__title {
+    width: 70%;
+  }
+  .commercial__cards .cards__info__description {
+    width: 100%;
+    padding-bottom: 2em;
+    border-bottom: 4px solid #FB3B64;
+  }
+  .commercial__cards .cards__info--large {
+    width: 55%;
+  }
+  .commercial__cards--background-rectangle {
+    width: 30%;
+  }
+  .commercial__cards--reverse {
+    flex-direction: row-reverse;
+  }
+}
 .pricing__premium, .pricing__professional, .pricing__basic {
   position: relative;
   padding: 1.5em 0.2em 2.5em 0.2em;
