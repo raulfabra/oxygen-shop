@@ -138,7 +138,21 @@
                     &__description {
                         width: 100%;
                         padding-bottom: 2em;
-                        border-bottom: 4px solid #FB3B64;
+                        border-bottom: 4px solid;
+                    }
+
+                    &__border {
+                        &--red {
+                            border-color: #FB3B64;
+                        }
+
+                        &--blue {
+                            border-color: #08A6E4;
+                        }
+
+                        &--green {
+                            border-color: #55DFB4;
+                        }
                     }
 
                 }

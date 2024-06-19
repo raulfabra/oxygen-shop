@@ -292,7 +292,16 @@ header .nav {
   .commercial__cards .cards__info__description {
     width: 100%;
     padding-bottom: 2em;
-    border-bottom: 4px solid #FB3B64;
+    border-bottom: 4px solid;
+  }
+  .commercial__cards .cards__info__border--red {
+    border-color: #FB3B64;
+  }
+  .commercial__cards .cards__info__border--blue {
+    border-color: #08A6E4;
+  }
+  .commercial__cards .cards__info__border--green {
+    border-color: #55DFB4;
   }
   .commercial__cards .cards__info--large {
     width: 55%;
