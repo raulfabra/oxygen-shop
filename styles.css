@@ -356,7 +356,7 @@ header .nav {
   position: relative;
 }
 .pricing__title {
-  padding-bottom: 0.6em;
+  padding: 4em 0 0.6em 0;
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
   font-weight: 400;
@@ -401,6 +401,43 @@ header .nav {
   background-color: #55DFB4;
 }
 
+@media only screen and (min-width: 1000px) {
+  .pricing {
+    display: flex;
+    gap: 10%;
+  }
+  .pricing__basic, .pricing__professional, .pricing__premium {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing__basic .columLeft, .pricing__professional .columLeft, .pricing__premium .columLeft {
+    transform: none;
+  }
+  .pricing__basic .columLeft__name, .pricing__professional .columLeft__name, .pricing__premium .columLeft__name {
+    margin-bottom: 1em;
+  }
+  .pricing__basic .columRight, .pricing__professional .columRight, .pricing__premium .columRight {
+    text-align: center;
+    padding: 4em 0 0 0;
+  }
+  .pricing__basic .button, .pricing__professional .button, .pricing__premium .button {
+    top: 95%;
+  }
+  .pricing__basic:hover, .pricing__professional:hover, .pricing__premium:hover {
+    transform: scale(1.1);
+  }
+  .pricing__basic:hover {
+    box-shadow: 5px 10px 27px 0px rgba(235, 71, 110, 0.2901960784);
+  }
+  .pricing__professional:hover {
+    box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
+  }
+  .pricing__premium:hover {
+    box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 0.2901960784);
+  }
+}
 .contact {
   padding: 2em;
 }
