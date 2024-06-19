@@ -61,10 +61,7 @@ header .nav {
     color: #A5A5A5;
   }
   header .nav__menu__item:hover {
-    display: flex;
-    align-items: center;
     color: #000000;
-    padding-bottom: 1.5em;
     border-bottom: 4px solid #08A6E4;
   }
 }
@@ -245,16 +242,22 @@ header .nav {
 }
 
 @media only screen and (min-width: 1000px) {
+  .exception {
+    margin: 0 auto;
+    display: flex;
+    gap: 5%;
+    max-width: 1124px;
+  }
   .commercial {
     padding: 8em 10em;
   }
   .commercial__cards {
     margin: 2.5em auto;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
     padding: 3em;
     max-width: 1124px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
   }
   .commercial__cards__ellipse--red {
     top: 30%;
@@ -274,6 +277,9 @@ header .nav {
     top: 25%;
     left: 15%;
   }
+  .commercial__cards__item--trumpet {
+    transform: translate(0, 10%);
+  }
   .commercial__cards .cards__info {
     width: 45%;
   }
@@ -283,13 +289,28 @@ header .nav {
   .commercial__cards .cards__info__description {
     width: 100%;
     padding-bottom: 2em;
-    border-bottom: 4px solid #FB3B64;
+    border-bottom: 4px solid;
+  }
+  .commercial__cards .cards__info__border--red {
+    border-color: #FB3B64;
+  }
+  .commercial__cards .cards__info__border--blue {
+    border-color: #08A6E4;
+  }
+  .commercial__cards .cards__info__border--green {
+    border-color: #55DFB4;
   }
   .commercial__cards .cards__info--large {
     width: 55%;
   }
   .commercial__cards--background-rectangle {
-    width: 30%;
+    margin-top: 0;
+    position: relative;
+  }
+  .commercial__cards--fillContainer {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
   }
   .commercial__cards--reverse {
     flex-direction: row-reverse;
@@ -356,7 +377,7 @@ header .nav {
   position: relative;
 }
 .pricing__title {
-  padding: 4em 0 0.6em 0;
+  padding: 2em 0 0.6em 0;
   font-family: "Raleway", sans-serif;
   font-size: 2.3rem;
   font-weight: 400;

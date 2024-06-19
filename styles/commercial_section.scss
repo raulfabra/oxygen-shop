@@ -80,16 +80,26 @@
 
 @media only screen and (min-width: 1000px) {
 
+    .exception {
+        margin: 0 auto;
+        display: flex;
+        gap: 5%;
+        max-width: 1124px;
+
+    }
+
     .commercial {
         padding: 8em 10em;
 
         &__cards {
             margin: 2.5em auto;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
             padding: 3em;
             max-width: 1124px;
+
+            display: flex;
+            justify-content: flex-start;
+
+            position: relative;
 
             &__ellipse--red {
                 top: 30%;
@@ -114,7 +124,9 @@
                 left: 15%;
             }
 
-            &__item--trumpet {}
+            &__item--trumpet {
+                transform: translate(0, 10%);
+            }
 
             .cards {
 
@@ -128,7 +140,21 @@
                     &__description {
                         width: 100%;
                         padding-bottom: 2em;
-                        border-bottom: 4px solid #FB3B64;
+                        border-bottom: 4px solid;
+                    }
+
+                    &__border {
+                        &--red {
+                            border-color: #FB3B64;
+                        }
+
+                        &--blue {
+                            border-color: #08A6E4;
+                        }
+
+                        &--green {
+                            border-color: #55DFB4;
+                        }
                     }
 
                 }
@@ -140,10 +166,15 @@
             }
 
             &--background-rectangle {
-                width: 30%;
+                margin-top: 0;
+                position: relative;
             }
 
-            &--fillContainer {}
+            &--fillContainer {
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+            }
 
         }
 
