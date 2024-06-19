@@ -93,11 +93,13 @@
 
         &__cards {
             margin: 2.5em auto;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
             padding: 3em;
             max-width: 1124px;
+
+            display: flex;
+            justify-content: flex-start;
+
+            position: relative;
 
             &__ellipse--red {
                 top: 30%;

@@ -61,10 +61,7 @@ header .nav {
     color: #A5A5A5;
   }
   header .nav__menu__item:hover {
-    display: flex;
-    align-items: center;
     color: #000000;
-    padding-bottom: 1.5em;
     border-bottom: 4px solid #08A6E4;
   }
 }
@@ -256,11 +253,11 @@ header .nav {
   }
   .commercial__cards {
     margin: 2.5em auto;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
     padding: 3em;
     max-width: 1124px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
   }
   .commercial__cards__ellipse--red {
     top: 30%;
