@@ -135,7 +135,26 @@
         }
     }
 
+    &__basic:hover,
+    &__professional:hover,
+    &__premium:hover {
+        transform: scale(1.1);
+    }
+
+    &__basic:hover {
+        box-shadow: 5px 10px 27px 0px #EB476E4A;
+    }
+
+    &__professional:hover {
+        box-shadow: 5px 10px 27px 0px #07ACE64A;
+    }
+
+    &__premium:hover {
+        box-shadow: 5px 10px 27px 0px #55DFB44A;
+    }
+
 }
+
 
 @media only screen and (min-width: 1000px) {
     .pricing {
@@ -168,24 +187,6 @@
             .button {
                 top: 95%;
             }
-        }
-
-        &__basic:hover,
-        &__professional:hover,
-        &__premium:hover {
-            transform: scale(1.1);
-        }
-
-        &__basic:hover {
-            box-shadow: 5px 10px 27px 0px #EB476E4A;
-        }
-
-        &__professional:hover {
-            box-shadow: 5px 10px 27px 0px #07ACE64A;
-        }
-
-        &__premium:hover {
-            box-shadow: 5px 10px 27px 0px #55DFB44A;
         }
     }
 }

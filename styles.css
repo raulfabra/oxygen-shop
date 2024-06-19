@@ -400,6 +400,18 @@ header .nav {
 .pricing__premium .button {
   background-color: #55DFB4;
 }
+.pricing__basic:hover, .pricing__professional:hover, .pricing__premium:hover {
+  transform: scale(1.1);
+}
+.pricing__basic:hover {
+  box-shadow: 5px 10px 27px 0px rgba(235, 71, 110, 0.2901960784);
+}
+.pricing__professional:hover {
+  box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
+}
+.pricing__premium:hover {
+  box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 0.2901960784);
+}
 
 @media only screen and (min-width: 1000px) {
   .pricing {
@@ -425,18 +437,6 @@ header .nav {
   .pricing__basic .button, .pricing__professional .button, .pricing__premium .button {
     top: 95%;
   }
-  .pricing__basic:hover, .pricing__professional:hover, .pricing__premium:hover {
-    transform: scale(1.1);
-  }
-  .pricing__basic:hover {
-    box-shadow: 5px 10px 27px 0px rgba(235, 71, 110, 0.2901960784);
-  }
-  .pricing__professional:hover {
-    box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
-  }
-  .pricing__premium:hover {
-    box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 0.2901960784);
-  }
 }
 .contact {
   padding: 2em;
@@ -455,6 +455,7 @@ header .nav {
   font-weight: 400;
   line-height: 1.2rem;
   text-align: left;
+  padding-bottom: 2em;
 }
 .contact__us {
   padding: 2em 0 2em;
@@ -528,6 +529,32 @@ header .nav {
   color: #FFFFFF;
 }
 
+@media only screen and (min-width: 1000px) {
+  .contact {
+    margin: 6em auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+  }
+  .contact__title {
+    margin-bottom: 0.5em;
+  }
+  .contact__subTitle {
+    padding-bottom: 1em;
+  }
+  .contact__us {
+    padding: 0;
+    margin-right: 5em;
+  }
+  .contact__us__email, .contact__us__numberPhone {
+    display: flex;
+    padding: 1em 0;
+  }
+  .contact__client {
+    width: 40%;
+  }
+}
 footer {
   padding: 1em;
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);

@@ -19,6 +19,8 @@
         line-height: 1.2rem;
         text-align: left;
 
+        padding-bottom: 2em;
+
     }
 
     &__us {
@@ -117,6 +119,46 @@
             color: #FFFFFF;
 
 
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .contact {
+        margin: 6em auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 70%;
+
+        &__title {
+            margin-bottom: .5em;
+        }
+
+        &__subTitle {
+            padding-bottom: 1em;
+        }
+
+        &__us {
+            padding: 0;
+            margin-right: 5em;
+
+            &__email,
+            &__numberPhone {
+                display: flex;
+                padding: 1em 0;
+
+                &__icon {}
+
+                &__text {}
+
+            }
+
+        }
+
+        &__client {
+            width: 40%;
         }
     }
 }
