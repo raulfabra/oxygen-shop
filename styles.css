@@ -96,6 +96,7 @@ header .nav {
   background-color: #08A6E4;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   border-radius: 2em;
+  cursor: pointer;
 }
 .sales__title--margin {
   margin-bottom: 1em;
@@ -370,6 +371,7 @@ header .nav {
   position: absolute;
   top: 90%;
   left: 30%;
+  cursor: pointer;
 }
 
 .pricing {
@@ -548,6 +550,7 @@ header .nav {
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   background-color: #08A6E4;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1000px) {
