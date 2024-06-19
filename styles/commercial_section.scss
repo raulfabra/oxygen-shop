@@ -80,6 +80,14 @@
 
 @media only screen and (min-width: 1000px) {
 
+    .exception {
+        margin: 0 auto;
+        display: flex;
+        gap: 5%;
+        max-width: 1124px;
+
+    }
+
     .commercial {
         padding: 8em 10em;
 
@@ -114,7 +122,9 @@
                 left: 15%;
             }
 
-            &__item--trumpet {}
+            &__item--trumpet {
+                transform: translate(0, 10%);
+            }
 
             .cards {
 
@@ -140,10 +150,15 @@
             }
 
             &--background-rectangle {
-                width: 30%;
+                margin-top: 0;
+                position: relative;
             }
 
-            &--fillContainer {}
+            &--fillContainer {
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+            }
 
         }
 
