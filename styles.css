@@ -491,7 +491,7 @@ header .nav {
   padding: 2em 0 2em;
 }
 .contact__us__email, .contact__us__numberPhone, .contact__us__linkedin {
-  text-align: left;
+  padding: 0.5em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -584,6 +584,9 @@ header .nav {
   }
   .contact__us__email__text, .contact__us__numberPhone__text, .contact__us__linkedin__text {
     margin-right: 2em;
+  }
+  .contact__us__linkedin {
+    padding: 1em 0;
   }
   .contact__us__linkedin__icon {
     width: 5%;
