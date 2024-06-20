@@ -84,7 +84,7 @@
         margin: 0 auto;
         display: flex;
         gap: 5%;
-        max-width: 1124px;
+        max-width: 1000px;
 
     }
 
@@ -93,8 +93,8 @@
 
         &__cards {
             margin: 2.5em auto;
-            padding: 3em;
-            max-width: 1124px;
+            padding: 1.5em;
+            max-width: 1000px;
 
             display: flex;
             justify-content: flex-start;
@@ -102,8 +102,10 @@
             position: relative;
 
             &__ellipse--red {
-                top: 30%;
-                left: 80%;
+                position: relative;
+                width: 10%;
+                height: 10%;
+                transform: translate(300%, 20%);
             }
 
             &__ellipse--blue {
@@ -116,7 +118,7 @@
                 //El absolute me lo hace mas pequeño y encaja mas en el contexto.
                 position: absolute;
                 top: 35%;
-                left: 65%;
+                left: 70%;
             }
 
             &__item--iphone {
@@ -125,7 +127,7 @@
             }
 
             &__item--trumpet {
-                transform: translate(0, 10%);
+                transform: translate(-10%, 5%);
             }
 
             .cards {
@@ -135,6 +137,10 @@
 
                     &__title {
                         width: 70%;
+
+                        &--large {
+                            width: 50%;
+                        }
                     }
 
                     &__description {
@@ -168,6 +174,7 @@
             &--background-rectangle {
                 margin-top: 0;
                 position: relative;
+                width: 40%;
             }
 
             &--fillContainer {

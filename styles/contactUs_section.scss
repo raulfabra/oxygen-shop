@@ -131,7 +131,6 @@
         padding: 0;
         display: flex;
         justify-content: center;
-        width: 70%;
 
         &__title {
             margin-bottom: .5em;
@@ -139,27 +138,32 @@
 
         &__subTitle {
             padding-bottom: 1em;
+            margin-bottom: 2em;
         }
 
         &__us {
             padding: 0;
-            margin-right: 5em;
+            width: 35%;
+            text-align: left;
 
             &__email,
             &__numberPhone {
-                display: flex;
-                padding: 1em 0;
+                display: inline-block;
 
-                &__icon {}
-
-                &__text {}
-
+                &__text {
+                    margin-right: 2em;
+                }
             }
 
         }
 
         &__client {
-            width: 40%;
+            width: 30%;
+
+            &__submit {
+                border-radius: 30px;
+                width: 50%;
+            }
         }
     }
 }
