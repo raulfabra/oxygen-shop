@@ -1,192 +1,200 @@
-.commercial {
+.benefits__cards {
     padding: 2em;
     background-color: #F7F7F7;
 
-    &__cards {
-        position: relative;
-        margin-bottom: 2.5em;
+    .card {
         padding: 2em;
-        background-color: #FFFFFF;
+        margin-bottom: 2.5em;
+
         border: 1px solid #E8E9ED;
         border-radius: 2%;
 
-        &__ellipse--red {
-            position: absolute;
-            top: 5%;
-            left: 55%;
-            z-index: 1;
-        }
+        background-color: #FFFFFF;
 
-        &__item--macbook {
-            position: relative;
-            z-index: 3;
-        }
-
-        &__item--iphone {
-            position: absolute;
-            top: 12%;
-            left: 28%;
-        }
-
-        &__item--trumpet {
-            position: relative;
-            transform: translate(-15%, 25%);
-        }
-
-        .cards {
-            &__info {
-
-                &__title {
-                    padding: 1em 0;
-                    font-family: $font_title;
-                    font-size: 2rem;
-                    font-weight: 400;
-                    line-height: 2rem;
-                    text-align: left;
-                }
-
-                &__description {
-                    font-family: $font_text;
-                    font-size: .9rem;
-                    font-weight: 400;
-                    line-height: 1.3rem;
-                    text-align: left;
-
-                }
-
-                &__title--brand {
-                    padding: 0.4em 0 1em 0;
-                }
-
-                &__description--brand {
-                    padding-bottom: 1em;
-                }
-
-            }
-        }
-
-        &--background-rectangle {
-            width: 100%;
-            background-color: #55DFB4;
-        }
-
-        &--fillContainer {
-            padding: 2em 2em 0 2em;
+        &--marginBotton {
             margin-bottom: 0;
         }
 
+        &--backgroundColor {
+            background-color: #55DFB4;
+        }
+
+        &__logo {
+            position: relative;
+
+            &__ellipse {
+
+                &--red {
+                    position: absolute;
+                    top: -15%;
+                    left: 55%;
+                }
+
+                &--blue {
+                    position: absolute;
+
+                }
+            }
+
+            &__device {
+
+                &--macbook {
+                    position: relative;
+                }
+
+                &--iphone {
+                    position: relative;
+                }
+
+                &--megaphone {
+                    position: relative;
+                    transform: translate(-15%, 25%);
+                }
+            }
+        }
+
+        &__info {
+
+            &__title {
+                padding: 1em 0;
+                font-family: $font_title;
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 2rem;
+                text-align: left;
+
+                &--paddingTop {
+                    padding-top: 0.4em;
+                }
+            }
+
+            &__description {
+                font-family: $font_text;
+                font-size: .9rem;
+                font-weight: 400;
+                line-height: 1.3rem;
+                text-align: left;
+            }
+        }
+
     }
+
 }
 
 @media only screen and (min-width: 1000px) {
 
-    .exception {
-        margin: 0 auto;
-        display: flex;
-        gap: 5%;
-        max-width: 1000px;
+    .benefits__cards {
 
-    }
-
-    .commercial {
-        padding: 8em 10em;
-
-        &__cards {
+        .card {
             margin: 2.5em auto;
-            padding: 1.5em;
             max-width: 1000px;
+            border-radius: 0;
 
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
 
-            position: relative;
-
-            &__ellipse--red {
-                position: relative;
-                width: 10%;
-                height: 10%;
-                transform: translate(300%, 20%);
+            &--reverse {
+                flex-direction: row-reverse;
             }
 
-            &__ellipse--blue {
-                position: absolute;
-                top: 20%;
-                left: 15%;
+            &--lastCard {
+                display: flex;
+                justify-content: space-between;
+                max-width: 1000px;
+                margin: 0 auto;
+                gap: 5%;
+
+                background-color: #F7F7F7;
             }
 
-            &__item--macbook {
-                //El absolute me lo hace mas pequeño y encaja mas en el contexto.
-                position: absolute;
-                top: 35%;
-                left: 70%;
-            }
+            &__logo {
+                width: 60%;
 
-            &__item--iphone {
-                top: 25%;
-                left: 15%;
-            }
-
-            &__item--trumpet {
-                transform: translate(-10%, 5%);
-            }
-
-            .cards {
-
-                &__info {
-                    width: 45%;
-
-                    &__title {
-                        width: 70%;
-
-                        &--large {
-                            width: 50%;
-                        }
-                    }
-
-                    &__description {
-                        width: 100%;
-                        padding-bottom: 2em;
-                        border-bottom: 4px solid;
-                    }
-
-                    &__border {
-                        &--red {
-                            border-color: #FB3B64;
-                        }
-
-                        &--blue {
-                            border-color: #08A6E4;
-                        }
-
-                        &--green {
-                            border-color: #55DFB4;
-                        }
-                    }
-
+                &--lastCard {
+                    position: relative;
+                    width: 40%;
                 }
 
-                &__info--large {
-                    width: 55%;
+                &--paddingBottom {
+                    padding-bottom: 4em;
+                }
 
+                &__ellipse {
+
+                    &--red {
+                        width: 20%;
+                        transform: translate(30%, 30%);
+                    }
+
+                    &--blue {
+                        width: 50%;
+                        transform: translate(-30%, -5%);
+                    }
+                }
+
+                &__device {
+
+                    &--macbook {
+                        width: 50%;
+                        transform: translate(10%, 20%);
+                    }
+
+                    &--iphone {
+                        width: 60%;
+                        transform: translate(-20%, 0);
+                    }
+
+                    &--megaphone {
+                        transform: translate(5%, 0);
+                    }
                 }
             }
 
-            &--background-rectangle {
-                margin-top: 0;
-                position: relative;
-                width: 40%;
-            }
-
-            &--fillContainer {
-                margin-top: 0;
+            &__info {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                width: 40%;
+
+                &--lastCard {
+                    width: 55%;
+                }
+
+                &__title {
+                    padding-top: 0;
+                    width: 70%;
+                }
+
+                &__description {
+                    padding-bottom: 2em;
+                    border-bottom: 4px solid;
+
+                    &--borderRed {
+                        border-color: #FB3B64;
+                    }
+
+                    &--borderBlue {
+                        border-color: #08A6E4;
+                    }
+
+                    &--borderGreen {
+                        border-color: #55DFB4;
+                    }
+                }
             }
 
         }
 
-        &__cards--reverse {
-            flex-direction: row-reverse;
+        .specialCard {
+            margin: 0 auto;
+            display: flex;
+            gap: 5%;
+            max-width: 1000px;
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
     }

@@ -29,7 +29,7 @@
         &__email,
         &__numberPhone,
         &__linkedin {
-            text-align: left;
+            padding: .5em 0;
 
             font-family: $font_text;
             font-size: 1rem;
@@ -44,6 +44,7 @@
             &__icon {
                 display: inline;
                 vertical-align: middle;
+
             }
 
             &__text {
@@ -158,6 +159,7 @@
             }
 
             &__linkedin {
+                padding: 1em 0;
 
                 &__icon {
                     width: 5%;

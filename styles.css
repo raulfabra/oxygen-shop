@@ -181,38 +181,45 @@ header .nav {
     width: 100%;
   }
 }
-.commercial {
+.benefits__cards {
   padding: 2em;
   background-color: #F7F7F7;
 }
-.commercial__cards {
-  position: relative;
-  margin-bottom: 2.5em;
+.benefits__cards .card {
   padding: 2em;
-  background-color: #FFFFFF;
+  margin-bottom: 2.5em;
   border: 1px solid #E8E9ED;
   border-radius: 2%;
+  background-color: #FFFFFF;
 }
-.commercial__cards__ellipse--red {
-  position: absolute;
-  top: 5%;
-  left: 55%;
-  z-index: 1;
+.benefits__cards .card--marginBotton {
+  margin-bottom: 0;
 }
-.commercial__cards__item--macbook {
+.benefits__cards .card--backgroundColor {
+  background-color: #55DFB4;
+}
+.benefits__cards .card__logo {
   position: relative;
-  z-index: 3;
 }
-.commercial__cards__item--iphone {
+.benefits__cards .card__logo__ellipse--red {
   position: absolute;
-  top: 12%;
-  left: 28%;
+  top: -15%;
+  left: 55%;
 }
-.commercial__cards__item--trumpet {
+.benefits__cards .card__logo__ellipse--blue {
+  position: absolute;
+}
+.benefits__cards .card__logo__device--macbook {
+  position: relative;
+}
+.benefits__cards .card__logo__device--iphone {
+  position: relative;
+}
+.benefits__cards .card__logo__device--megaphone {
   position: relative;
   transform: translate(-15%, 25%);
 }
-.commercial__cards .cards__info__title {
+.benefits__cards .card__info__title {
   padding: 1em 0;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -220,107 +227,100 @@ header .nav {
   line-height: 2rem;
   text-align: left;
 }
-.commercial__cards .cards__info__description {
+.benefits__cards .card__info__title--paddingTop {
+  padding-top: 0.4em;
+}
+.benefits__cards .card__info__description {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.3rem;
   text-align: left;
 }
-.commercial__cards .cards__info__title--brand {
-  padding: 0.4em 0 1em 0;
-}
-.commercial__cards .cards__info__description--brand {
-  padding-bottom: 1em;
-}
-.commercial__cards--background-rectangle {
-  width: 100%;
-  background-color: #55DFB4;
-}
-.commercial__cards--fillContainer {
-  padding: 2em 2em 0 2em;
-  margin-bottom: 0;
-}
 
 @media only screen and (min-width: 1000px) {
-  .exception {
+  .benefits__cards .card {
+    margin: 2.5em auto;
+    max-width: 1000px;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .benefits__cards .card--reverse {
+    flex-direction: row-reverse;
+  }
+  .benefits__cards .card--lastCard {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 5%;
+    background-color: #F7F7F7;
+  }
+  .benefits__cards .card__logo {
+    width: 60%;
+  }
+  .benefits__cards .card__logo--lastCard {
+    position: relative;
+    width: 40%;
+  }
+  .benefits__cards .card__logo--paddingBottom {
+    padding-bottom: 4em;
+  }
+  .benefits__cards .card__logo__ellipse--red {
+    width: 20%;
+    transform: translate(30%, 30%);
+  }
+  .benefits__cards .card__logo__ellipse--blue {
+    width: 50%;
+    transform: translate(-30%, -5%);
+  }
+  .benefits__cards .card__logo__device--macbook {
+    width: 50%;
+    transform: translate(10%, 20%);
+  }
+  .benefits__cards .card__logo__device--iphone {
+    width: 60%;
+    transform: translate(-20%, 0);
+  }
+  .benefits__cards .card__logo__device--megaphone {
+    transform: translate(5%, 0);
+  }
+  .benefits__cards .card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+  .benefits__cards .card__info--lastCard {
+    width: 55%;
+  }
+  .benefits__cards .card__info__title {
+    padding-top: 0;
+    width: 70%;
+  }
+  .benefits__cards .card__info__description {
+    padding-bottom: 2em;
+    border-bottom: 4px solid;
+  }
+  .benefits__cards .card__info__description--borderRed {
+    border-color: #FB3B64;
+  }
+  .benefits__cards .card__info__description--borderBlue {
+    border-color: #08A6E4;
+  }
+  .benefits__cards .card__info__description--borderGreen {
+    border-color: #55DFB4;
+  }
+  .benefits__cards .specialCard {
     margin: 0 auto;
     display: flex;
     gap: 5%;
     max-width: 1000px;
   }
-  .commercial {
-    padding: 8em 10em;
-  }
-  .commercial__cards {
-    margin: 2.5em auto;
-    padding: 1.5em;
-    max-width: 1000px;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-  }
-  .commercial__cards__ellipse--red {
-    position: relative;
-    width: 10%;
-    height: 10%;
-    transform: translate(300%, 20%);
-  }
-  .commercial__cards__ellipse--blue {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-  }
-  .commercial__cards__item--macbook {
-    position: absolute;
-    top: 35%;
-    left: 70%;
-  }
-  .commercial__cards__item--iphone {
-    top: 25%;
-    left: 15%;
-  }
-  .commercial__cards__item--trumpet {
-    transform: translate(-10%, 5%);
-  }
-  .commercial__cards .cards__info {
-    width: 45%;
-  }
-  .commercial__cards .cards__info__title {
-    width: 70%;
-  }
-  .commercial__cards .cards__info__title--large {
-    width: 50%;
-  }
-  .commercial__cards .cards__info__description {
-    width: 100%;
-    padding-bottom: 2em;
-    border-bottom: 4px solid;
-  }
-  .commercial__cards .cards__info__border--red {
-    border-color: #FB3B64;
-  }
-  .commercial__cards .cards__info__border--blue {
-    border-color: #08A6E4;
-  }
-  .commercial__cards .cards__info__border--green {
-    border-color: #55DFB4;
-  }
-  .commercial__cards .cards__info--large {
-    width: 55%;
-  }
-  .commercial__cards--background-rectangle {
-    margin-top: 0;
-    position: relative;
-    width: 40%;
-  }
-  .commercial__cards--fillContainer {
-    margin-top: 0;
+  .benefits__cards .specialCard__info {
     display: flex;
     flex-direction: column;
-  }
-  .commercial__cards--reverse {
-    flex-direction: row-reverse;
   }
 }
 .pricing__premium, .pricing__professional, .pricing__basic {
@@ -491,7 +491,7 @@ header .nav {
   padding: 2em 0 2em;
 }
 .contact__us__email, .contact__us__numberPhone, .contact__us__linkedin {
-  text-align: left;
+  padding: 0.5em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -584,6 +584,9 @@ header .nav {
   }
   .contact__us__email__text, .contact__us__numberPhone__text, .contact__us__linkedin__text {
     margin-right: 2em;
+  }
+  .contact__us__linkedin {
+    padding: 1em 0;
   }
   .contact__us__linkedin__icon {
     width: 5%;
