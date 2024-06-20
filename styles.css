@@ -247,22 +247,24 @@ header .nav {
     margin: 0 auto;
     display: flex;
     gap: 5%;
-    max-width: 1124px;
+    max-width: 1000px;
   }
   .commercial {
     padding: 8em 10em;
   }
   .commercial__cards {
     margin: 2.5em auto;
-    padding: 3em;
-    max-width: 1124px;
+    padding: 1.5em;
+    max-width: 1000px;
     display: flex;
     justify-content: flex-start;
     position: relative;
   }
   .commercial__cards__ellipse--red {
-    top: 30%;
-    left: 80%;
+    position: relative;
+    width: 10%;
+    height: 10%;
+    transform: translate(300%, 20%);
   }
   .commercial__cards__ellipse--blue {
     position: absolute;
@@ -272,20 +274,23 @@ header .nav {
   .commercial__cards__item--macbook {
     position: absolute;
     top: 35%;
-    left: 65%;
+    left: 70%;
   }
   .commercial__cards__item--iphone {
     top: 25%;
     left: 15%;
   }
   .commercial__cards__item--trumpet {
-    transform: translate(0, 10%);
+    transform: translate(-10%, 5%);
   }
   .commercial__cards .cards__info {
     width: 45%;
   }
   .commercial__cards .cards__info__title {
     width: 70%;
+  }
+  .commercial__cards .cards__info__title--large {
+    width: 50%;
   }
   .commercial__cards .cards__info__description {
     width: 100%;
@@ -307,6 +312,7 @@ header .nav {
   .commercial__cards--background-rectangle {
     margin-top: 0;
     position: relative;
+    width: 40%;
   }
   .commercial__cards--fillContainer {
     margin-top: 0;
@@ -446,6 +452,7 @@ header .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5%;
   }
   .pricing__basic .columLeft, .pricing__professional .columLeft, .pricing__premium .columLeft {
     transform: none;
@@ -455,7 +462,7 @@ header .nav {
   }
   .pricing__basic .columRight, .pricing__professional .columRight, .pricing__premium .columRight {
     text-align: center;
-    padding: 4em 0 0 0;
+    padding: 4em 0 4em 0;
   }
   .pricing__basic .button, .pricing__professional .button, .pricing__premium .button {
     top: 95%;
@@ -559,24 +566,31 @@ header .nav {
     padding: 0;
     display: flex;
     justify-content: center;
-    width: 70%;
   }
   .contact__title {
     margin-bottom: 0.5em;
   }
   .contact__subTitle {
     padding-bottom: 1em;
+    margin-bottom: 2em;
   }
   .contact__us {
     padding: 0;
-    margin-right: 5em;
+    width: 35%;
+    text-align: left;
   }
   .contact__us__email, .contact__us__numberPhone {
-    display: flex;
-    padding: 1em 0;
+    display: inline-block;
+  }
+  .contact__us__email__text, .contact__us__numberPhone__text {
+    margin-right: 2em;
   }
   .contact__client {
-    width: 40%;
+    width: 30%;
+  }
+  .contact__client__submit {
+    border-radius: 30px;
+    width: 50%;
   }
 }
 footer {
