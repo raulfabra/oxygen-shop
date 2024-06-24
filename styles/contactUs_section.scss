@@ -54,6 +54,21 @@
 
         }
 
+        &__linkedin {
+
+            &__text {
+                text-decoration: none;
+            }
+
+            &__text:hover {
+                font-weight: bold;
+            }
+
+            &__text:visited {
+                color: #A5A5A5;
+            }
+        }
+
     }
 
     &__client {

@@ -178,7 +178,7 @@ header .nav {
     margin-bottom: 4em;
   }
   .salesPlatform__text--small {
-    width: 100%;
+    width: 80%;
   }
 }
 .benefits__cards {
@@ -506,6 +506,15 @@ header .nav {
 .contact__us__email__text, .contact__us__numberPhone__text, .contact__us__linkedin__text {
   display: inline;
   vertical-align: middle;
+}
+.contact__us__linkedin__text {
+  text-decoration: none;
+}
+.contact__us__linkedin__text:hover {
+  font-weight: bold;
+}
+.contact__us__linkedin__text:visited {
+  color: #A5A5A5;
 }
 .contact__client {
   text-align: left;
