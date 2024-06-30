@@ -28,6 +28,27 @@ header .header__icon {
 header .nav {
   display: none;
 }
+header .nav--mobile {
+  display: block;
+}
+header .nav__menu--mobile {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 1em;
+}
+header .nav__menu__item--mobile {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+  padding: 0.5em 0;
+  color: #A5A5A5;
+}
+header .nav__menu__item--mobile:hover {
+  color: #000000;
+}
 
 @media only screen and (min-width: 1000px) {
   header {
@@ -56,7 +77,7 @@ header .nav {
     font-size: 0.7rem;
     font-weight: 700;
     line-height: 1rem;
-    letter-spacing: 3.2799999714px;
+    letter-spacing: 0.2rem;
     text-align: center;
     color: #A5A5A5;
   }
