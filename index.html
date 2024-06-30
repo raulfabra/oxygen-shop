@@ -18,11 +18,11 @@
         <h1 class="header__title">OXYGENShop</h1>
         <img class="header__icon" src="./public/images/Menu.png" alt="menu_desplegable" />
         <nav class="nav">
-            <ul class="nav__menu">
-                <li class="nav__menu__item">Why Us</li>
-                <li class="nav__menu__item">Benefits</li>
-                <li class="nav__menu__item">Prices</li>
-                <li class="nav__menu__item">Contact</li>
+            <ul class="nav__menu nav__menu--mobile">
+                <li class="nav__menu__item nav__menu__item--mobile">Why Us</li>
+                <li class="nav__menu__item nav__menu__item--mobile">Benefits</li>
+                <li class="nav__menu__item nav__menu__item--mobile">Prices</li>
+                <li class="nav__menu__item nav__menu__item--mobile">Contact</li>
             </ul>
         </nav>
     </header>
@@ -200,7 +200,7 @@
         </article>
         <form action="" class="contact__client">
             <label for="name" class="contact__client__label">NAME</label>
-            <input type="text" name="name" class="contact__client__fillInput" />
+            <input type="text" name="name" id="name" class="contact__client__fillInput" />
 
             <label for="email" class="contact__client__label">EMAIL</label>
             <input type="email" name="email" id="email" class="contact__client__fillInput" />
@@ -227,6 +227,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

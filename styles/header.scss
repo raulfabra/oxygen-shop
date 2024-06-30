@@ -18,6 +18,35 @@ header {
 
     .nav {
         display: none;
+
+        &--mobile {
+            display: block;
+        }
+
+        &__menu {
+
+            &--mobile {
+                list-style: none;
+                text-transform: uppercase;
+                text-align: left;
+                padding: 1em;
+            }
+
+            &__item--mobile {
+                font-family: $font_text;
+                font-size: .6rem;
+                font-weight: 700;
+                line-height: 1rem;
+                letter-spacing: .2rem;
+
+                padding: .5em 0;
+                color: #A5A5A5;
+            }
+
+            &__item--mobile:hover {
+                color: #000000;
+            }
+        }
     }
 }
 
@@ -50,7 +79,7 @@ header {
                     font-size: .7rem;
                     font-weight: 700;
                     line-height: 1rem;
-                    letter-spacing: 3.2799999713897705px;
+                    letter-spacing: .2rem;
                     text-align: center;
 
                     color: #A5A5A5;
