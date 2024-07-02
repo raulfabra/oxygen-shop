@@ -558,6 +558,9 @@ header .nav__menu__item--mobile:hover {
   width: 100%;
   margin-bottom: 3em;
 }
+.contact__client__fillInput--inputError {
+  border-bottom-color: red;
+}
 .contact__client__checkTerms {
   display: inline-block;
   vertical-align: top;
