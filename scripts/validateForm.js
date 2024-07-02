@@ -8,10 +8,10 @@ function validateForm() {
         // Validar Input Name
         const nombre = event.target.elements['name']
 
-        if (nombre.value.length <= 1) {
-            nombre.style.borderBottomColor = 'red'
+        if (nombre.value.length < 2 && 100 > nombre.value.length) {
+            nombre.classList.add("contact__client__fillInput--inputError")
         }
-        else nombre.style.borderBottomColor = '#95989A'
+        else nombre.classList.remove("contact__client__fillInput--inputError")
 
         // Validar Input Email
         const email  = event.target.elements['email']
@@ -19,11 +19,22 @@ function validateForm() {
         const regex = new RegExp(re)
 
         if (!regex.test(email.value)) {
-            email.style.borderBottomColor = 'red'
+            email.classList.add("contact__client__fillInput--inputError")
         }
-        else email.style.borderBottomColor = '#95989A'
+        else email.classList.remove("contact__client__fillInput--inputError")
 
-        // Validar Checkbox Terms
+        // Enviar los datos del formulario a la API de testing 
+        // Si estan aceptados los Términos(terms) y Validados los campos del formulario.
         const terms = event.target.elements['terms']
+        const APItesting = new Api('https://jsonplaceholder.typicode.com/posts')
+
+        if (nombre.value.length > 2 && regex.test(email.value) && terms.checked){
+            APItesting.postRequest(
+                {
+                    name: nombre.value,
+                    email: email.value
+                }
+            ).then(data => console.log(data))
+        }
     })
 }
