@@ -683,4 +683,62 @@ footer .footer__redes__icon {
   margin-left: 1em;
 }
 
+.popUp {
+  position: fixed;
+  padding: 5em;
+  z-index: 55;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("/public/images/Subscribe_newsletter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid #bd5e27;
+  border-radius: 10%;
+}
+.popUp__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 41px;
+}
+.popUp__form {
+  padding: 4em 0em;
+}
+.popUp__form--label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3em;
+}
+.popUp__form--input {
+  padding: 5px 0;
+  border: 2px solid black;
+}
+.popUp__form--button {
+  margin: 1em;
+  padding: 0.6em 1.3em;
+  width: 70%;
+  border-radius: 23px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+  .popUp {
+    transform: scale(1.7, 1.7);
+    top: 35%;
+    left: 35%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
