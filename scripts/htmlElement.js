@@ -1,16 +1,14 @@
 class HtlmElement {
 
-    constructor(){}
+    constructor() { }
 
-    getHtmlModal() {
+    getHTMLmodal() {
         const div = document.createElement('div')
         div.classList.add('popUp')
         const title = document.createElement('h2')
         title.classList.add('popUp__title')
         title.innerText = 'Subscribe to our newsletter'
         const form = document.createElement('form')
-        form.method = 'POST'
-        form.action = '/'
         form.classList.add('popUp__form')
         form.innerHTML = `
             <label for="correo" class="popUp__form--label">EMAIL</label>
@@ -24,5 +22,9 @@ class HtlmElement {
         div.appendChild(form)
         return div
     }
-    
+
+    insertHTMLmodal() {
+        return document.getElementsByTagName('body')[0].append(this.getHTMLmodal())
+    }
+
 }
