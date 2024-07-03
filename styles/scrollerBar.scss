@@ -1,0 +1,13 @@
+.scroller__bar {
+    position: fixed;
+    z-index: 33;
+    width: 100%;
+    color: #FB3B64;
+
+    &--x {
+        position: relative;
+        width: 0%;
+        padding: 0em;
+        background-color: #FB3B64;
+    }
+}

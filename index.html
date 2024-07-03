@@ -18,14 +18,17 @@
         <h1 class="header__title">OXYGENShop</h1>
         <img class="header__icon" src="./public/images/Menu.png" alt="menu_desplegable" />
         <nav class="nav">
-            <ul class="nav__menu">
-                <li class="nav__menu__item">Why Us</li>
-                <li class="nav__menu__item">Benefits</li>
-                <li class="nav__menu__item">Prices</li>
-                <li class="nav__menu__item">Contact</li>
+            <ul class="nav__menu nav__menu--mobile">
+                <li class="nav__menu__item nav__menu__item--mobile">Why Us</li>
+                <li class="nav__menu__item nav__menu__item--mobile">Benefits</li>
+                <li class="nav__menu__item nav__menu__item--mobile">Prices</li>
+                <li class="nav__menu__item nav__menu__item--mobile">Contact</li>
             </ul>
         </nav>
     </header>
+    <aside class="scroller__bar">
+        <div class="scroller__bar--x"></div>
+    </aside>
     <main>
         <section class="sales">
             <h2 class="sales__title">Sell More!</h2>
@@ -108,6 +111,11 @@
 
     </section>
     <h2 class="pricing__title">Pricing</h2>
+    <select name="currencies" id="currencies" class="pricing__currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+    </select>
     <section class="pricing">
         <article class="pricing__basic">
             <div class="columLeft">
@@ -198,20 +206,20 @@
                     rel="noopener noreferrer"> www.linkedin.com/in/raulfabra/ </a>
             </div>
         </article>
-        <form action="" class="contact__client">
+        <form action="/" class="contact__client">
             <label for="name" class="contact__client__label">NAME</label>
-            <input type="text" name="name" class="contact__client__fillInput" />
+            <input type="text" name="name" id="name" class="contact__client__fillInput" />
 
             <label for="email" class="contact__client__label">EMAIL</label>
             <input type="email" name="email" id="email" class="contact__client__fillInput" />
 
-            <input type="checkbox" name="terms" id="terms" class="contact__client__checkTerms" />
+            <input type="checkbox" name="terms" id="terms" class="contact__client__checkTerms" required />
             <label for="terms" class="contact__client__terms">I hereby give consent for my personal data included in my
                 application to be processed for the purposes of the recruitment process under the European Parliaments
                 and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016,
                 with regard to the processing of personal data and on the free movement of such data, and repealing
                 Directive 95/46/EC (Data Protection Directive)</label>
-            <button class="contact__client__submit">Send</button>
+            <button type="submit" class="contact__client__submit">Send</button>
         </form>
     </section>
     <footer>
@@ -227,6 +235,14 @@
             </a>
         </div>
     </footer>
+
+    <script src="scripts/popUpModal.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/scrollerBar.js"></script>
+    <script src="scripts/htmlElement.js"></script>
+    <script src="scripts/validateForm.js"></script>
+    <script src="scripts/changeCurrency.js"></script>
+    <script src="scripts/api.js"></script>
 </body>
 
 </html>
