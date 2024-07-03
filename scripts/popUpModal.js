@@ -1,11 +1,11 @@
-const APItesting = new Api('https://jsonplaceholder.typicode.com/posts')
-
 setTimeout(() => {
-    document.getElementsByTagName('body')[0].append(new HtlmElement().getHTMLmodal())
+    const APItesting = new Api('https://jsonplaceholder.typicode.com/posts')
 
-    const form = document.querySelector('.popUp__form')
+    //Mostrar el Modal
+    new HTMLElement().insertHTMLmodal()
 
     // Validar el email y enviar información al servidor
+    const form = document.querySelector('.popUp__form')
     form.addEventListener('submit', (event) => {
 
         event.preventDefault()
@@ -25,4 +25,21 @@ setTimeout(() => {
         else email.style.borderColor = 'red'
 
     })
+
+    // Cerrar el modal
+    const exit_close = document.querySelector('.popUp__containerCross')
+    const modalPopup = document.querySelector('.popUp')
+
+    exit_close.addEventListener('click', () => {
+        if (modalPopup) modalPopup.remove()
+    })
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') modalPopup.remove()
+    })
+
+    document.addEventListener('click', (event) => {
+        if (!modalPopup.contains(event.target)) modalPopup.remove()
+    })
+
 }, 5000)

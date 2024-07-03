@@ -1,8 +1,8 @@
-const API = new Api('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json')
-const DOLAR_prices = [0, 25, 60]
-const currencies = document.getElementById('currencies')
+document.getElementById('currencies').addEventListener('change', (event) => {
 
-currencies.addEventListener('change', (event) => {
+    const API = new Api('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json')
+    const DOLAR_prices = [0, 25, 60]
+
     const selectCurrency = event.target.value //options
 
     const prices = document.getElementsByClassName('columLeft__price')

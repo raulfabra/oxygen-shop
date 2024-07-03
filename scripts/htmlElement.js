@@ -1,10 +1,15 @@
-class HtlmElement {
+class HTMLElement {
 
-    constructor() { }
+    constructor() {
+
+    }
 
     getHTMLmodal() {
         const div = document.createElement('div')
         div.classList.add('popUp')
+        const aside = document.createElement('aside')
+        aside.classList.add('popUp__containerCross')
+        aside.innerHTML = ` <img src = "./public/images/close.png" alt="cross__icon" class="popUp__containerCross--image" /> `
         const title = document.createElement('h2')
         title.classList.add('popUp__title')
         title.innerText = 'Subscribe to our newsletter'
@@ -17,7 +22,7 @@ class HtlmElement {
             <button type="submit" class="popUp__form--button">Send</button>
             
         `
-
+        div.appendChild(aside)
         div.appendChild(title)
         div.appendChild(form)
         return div
