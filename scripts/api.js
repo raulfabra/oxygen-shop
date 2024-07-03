@@ -1,22 +1,22 @@
 class Api {
-    constructor(url){
+    constructor(url) {
         this.url = url
     }
 
-    async getRequest () {
-        try{
+    async getRequest() {
+        try {
             const request = await fetch(this.url)
-            if (request.ok){
+            if (request.ok) {
                 const data = await request.json()
                 return data
             }
         }
-        catch(error){
+        catch (error) {
             console.log(error)
         }
     }
 
-    async postRequest (body) {
+    async postRequest(body) {
         try {
             const response = await fetch(this.url,
                 {
@@ -27,12 +27,12 @@ class Api {
                     body: JSON.stringify(body)
                 }
             )
-            if (response.ok){
+            if (response.ok) {
                 const data = await response.json()
                 return data
             }
-            
-        } 
+
+        }
         catch (error) {
             console.log(error)
         }
