@@ -696,6 +696,15 @@ footer .footer__redes__icon {
   border: 4px solid #bd5e27;
   border-radius: 10%;
 }
+.popUp__containerCross {
+  cursor: pointer;
+}
+.popUp__containerCross--image {
+  position: absolute;
+  width: 10%;
+  top: 5%;
+  left: 80%;
+}
 .popUp__title {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
@@ -738,6 +747,10 @@ footer .footer__redes__icon {
     transform: scale(1.7, 1.7);
     top: 35%;
     left: 35%;
+  }
+  .popUp__containerCross--image {
+    width: 5%;
+    left: 90%;
   }
 }
 
