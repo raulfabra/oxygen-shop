@@ -16,6 +16,6 @@ document.addEventListener("scroll", () => {
     }
     else scrollerBar.style.padding = "0em"
 
-    if (percent >= 25) new HtlmElement().insertHTMLmodal()
+    if (percent >= 25) { }
 
 })
