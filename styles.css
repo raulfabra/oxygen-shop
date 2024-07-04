@@ -650,7 +650,7 @@ header .nav__menu__item--mobile:hover {
   }
 }
 .scrollerUp {
-  display: none;
+  visibility: hidden;
   position: fixed;
   bottom: 5%;
   right: 5%;
@@ -659,6 +659,9 @@ header .nav__menu__item--mobile:hover {
   background-color: red;
   border-radius: 50%;
   cursor: pointer;
+}
+.scrollerUp--visible {
+  visibility: visible;
 }
 .scrollerUp__image {
   width: 100%;

@@ -1,5 +1,6 @@
 .scrollerUp {
-    display: none;
+    visibility: hidden;
+
     position: fixed;
     bottom: 5%;
     right: 5%;
@@ -9,6 +10,10 @@
     border-radius: 50%;
 
     cursor: pointer;
+
+    &--visible {
+        visibility: visible;
+    }
 
     &__image {
         width: 100%;
