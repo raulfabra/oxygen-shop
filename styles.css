@@ -18,7 +18,6 @@ header {
   background-color: #FFFFFF;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
 }
-
 header .header__title {
   display: inline;
   font-family: "Raleway", sans-serif;
@@ -26,27 +25,22 @@ header .header__title {
   line-height: 37px;
   color: #08A6E4;
 }
-
 header .header__icon {
   display: inline;
   margin-left: 6em;
 }
-
 header .nav {
   display: none;
 }
-
 header .nav--mobile {
   display: block;
 }
-
 header .nav__menu--mobile {
   list-style: none;
   text-transform: uppercase;
   text-align: left;
   padding: 1em;
 }
-
 header .nav__menu__item--mobile {
   font-family: "Open Sans", sans-serif;
   font-size: 0.6rem;
@@ -56,7 +50,6 @@ header .nav__menu__item--mobile {
   padding: 0.5em 0;
   color: #A5A5A5;
 }
-
 header .nav__menu__item--mobile:hover {
   color: #000000;
 }
@@ -66,27 +59,22 @@ header .nav__menu__item--mobile:hover {
     display: flex;
     justify-content: space-between;
   }
-
   header .header__title {
     margin-left: 3em;
   }
-
   header .header__icon {
     display: none;
   }
-
   header .nav {
     display: flex;
     align-items: center;
   }
-
   header .nav__menu {
     margin-right: 2em;
     display: flex;
     list-style: none;
     text-transform: uppercase;
   }
-
   header .nav__menu__item {
     margin: 0 4em;
     font-family: "Open Sans", sans-serif;
@@ -97,20 +85,17 @@ header .nav__menu__item--mobile:hover {
     text-align: center;
     color: #A5A5A5;
   }
-
   header .nav__menu__item:hover {
     color: #000000;
     border-bottom: 4px solid #08A6E4;
   }
 }
-
 .scroller__bar {
   position: fixed;
   z-index: 33;
   width: 100%;
   color: #FB3B64;
 }
-
 .scroller__bar--x {
   position: relative;
   width: 0%;
@@ -123,7 +108,6 @@ header .nav__menu__item--mobile:hover {
   padding: 2.5em;
   max-width: 375px;
 }
-
 .sales__title {
   padding: 0.5em;
   font-family: "Raleway", sans-serif;
@@ -131,14 +115,12 @@ header .nav__menu__item--mobile:hover {
   font-weight: 400;
   line-height: 41px;
 }
-
 .sales__description {
   padding: 0.5em;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 23px;
 }
-
 .sales__button {
   margin-top: 2em;
   padding: 1.2em 2em;
@@ -154,7 +136,6 @@ header .nav__menu__item--mobile:hover {
   border-radius: 2em;
   cursor: pointer;
 }
-
 .sales__title--margin {
   margin-bottom: 1em;
 }
@@ -162,7 +143,6 @@ header .nav__menu__item--mobile:hover {
 .banner__image--mobile {
   width: 100%;
 }
-
 .banner__image--laptop {
   display: none;
 }
@@ -172,7 +152,6 @@ header .nav__menu__item--mobile:hover {
     padding: 1em;
     max-width: 450px;
   }
-
   .sales__title {
     padding: 2em 0 0 0;
     font-size: 3rem;
@@ -180,43 +159,35 @@ header .nav__menu__item--mobile:hover {
     line-height: 57px;
     text-align: center;
   }
-
   .sales__title--margin {
     margin-bottom: 2em;
   }
-
   .banner__image--mobile {
     display: none;
   }
-
   .banner__image--laptop {
     display: block;
     width: 100%;
   }
 }
-
 .salesPlatform {
   position: relative;
 }
-
 .salesPlatform__person {
   position: absolute;
   top: 2%;
   left: 50%;
 }
-
 .salesPlatform__eye {
   position: absolute;
   top: 6%;
   left: 50%;
 }
-
 .salesPlatform__catalog {
   position: absolute;
   top: 5%;
   left: 50%;
 }
-
 .salesPlatform__value {
   padding: 0.6em;
   font-family: "Raleway", sans-serif;
@@ -224,7 +195,6 @@ header .nav__menu__item--mobile:hover {
   font-weight: 800;
   line-height: 24px;
 }
-
 .salesPlatform__text {
   padding: 0.6em 0.6em 0.8em 0.6em;
   font-family: "Raleway", sans-serif;
@@ -233,7 +203,6 @@ header .nav__menu__item--mobile:hover {
   line-height: 20px;
   color: #A5A5A5;
 }
-
 .salesPlatform__text--small {
   margin: 0 auto;
   width: 45%;
@@ -246,17 +215,14 @@ header .nav__menu__item--mobile:hover {
     padding: 4em;
     margin-bottom: 4em;
   }
-
   .salesPlatform__text--small {
     width: 80%;
   }
 }
-
 .benefits__cards {
   padding: 2em;
   background-color: #F7F7F7;
 }
-
 .benefits__cards .card {
   padding: 2em;
   margin-bottom: 2.5em;
@@ -264,42 +230,33 @@ header .nav__menu__item--mobile:hover {
   border-radius: 2%;
   background-color: #FFFFFF;
 }
-
 .benefits__cards .card--marginBotton {
   margin-bottom: 0;
 }
-
 .benefits__cards .card--backgroundColor {
   background-color: #55DFB4;
 }
-
 .benefits__cards .card__logo {
   position: relative;
 }
-
 .benefits__cards .card__logo__ellipse--red {
   position: absolute;
   top: -15%;
   left: 55%;
 }
-
 .benefits__cards .card__logo__ellipse--blue {
   position: absolute;
 }
-
 .benefits__cards .card__logo__device--macbook {
   position: relative;
 }
-
 .benefits__cards .card__logo__device--iphone {
   position: relative;
 }
-
 .benefits__cards .card__logo__device--megaphone {
   position: relative;
   transform: translate(-15%, 25%);
 }
-
 .benefits__cards .card__info__title {
   padding: 1em 0;
   font-family: "Raleway", sans-serif;
@@ -308,11 +265,9 @@ header .nav__menu__item--mobile:hover {
   line-height: 2rem;
   text-align: left;
 }
-
 .benefits__cards .card__info__title--paddingTop {
   padding-top: 0.4em;
 }
-
 .benefits__cards .card__info__description {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
@@ -329,11 +284,9 @@ header .nav__menu__item--mobile:hover {
     display: flex;
     justify-content: space-between;
   }
-
   .benefits__cards .card--reverse {
     flex-direction: row-reverse;
   }
-
   .benefits__cards .card--lastCard {
     display: flex;
     justify-content: space-between;
@@ -342,136 +295,101 @@ header .nav__menu__item--mobile:hover {
     gap: 5%;
     background-color: #F7F7F7;
   }
-
   .benefits__cards .card__logo {
     width: 60%;
   }
-
   .benefits__cards .card__logo--lastCard {
     position: relative;
     width: 40%;
   }
-
   .benefits__cards .card__logo--paddingBottom {
     padding-bottom: 4em;
   }
-
   .benefits__cards .card__logo__ellipse--red {
     width: 20%;
     transform: translate(30%, 30%);
   }
-
   .benefits__cards .card__logo__ellipse--blue {
     width: 50%;
     transform: translate(-30%, -5%);
   }
-
   .benefits__cards .card__logo__device--macbook {
     width: 50%;
     transform: translate(10%, 20%);
   }
-
   .benefits__cards .card__logo__device--iphone {
     width: 60%;
     transform: translate(-20%, 0);
   }
-
   .benefits__cards .card__logo__device--megaphone {
     transform: translate(5%, 0);
   }
-
   .benefits__cards .card__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 40%;
   }
-
   .benefits__cards .card__info--lastCard {
     width: 55%;
   }
-
   .benefits__cards .card__info__title {
     padding-top: 0;
     width: 70%;
   }
-
   .benefits__cards .card__info__description {
     padding-bottom: 2em;
     border-bottom: 4px solid;
   }
-
   .benefits__cards .card__info__description--borderRed {
     border-color: #FB3B64;
   }
-
   .benefits__cards .card__info__description--borderBlue {
     border-color: #08A6E4;
   }
-
   .benefits__cards .card__info__description--borderGreen {
     border-color: #55DFB4;
   }
-
   .benefits__cards .specialCard {
     margin: 0 auto;
     display: flex;
     gap: 5%;
     max-width: 1000px;
   }
-
   .benefits__cards .specialCard__info {
     display: flex;
     flex-direction: column;
   }
 }
-
-.pricing__premium,
-.pricing__professional,
-.pricing__basic {
+.pricing__premium, .pricing__professional, .pricing__basic {
   position: relative;
   padding: 1.5em 0.2em 2.5em 0.2em;
   width: 100%;
   border-radius: 10%;
 }
-
-.pricing__premium .columLeft,
-.pricing__professional .columLeft,
-.pricing__basic .columLeft {
+.pricing__premium .columLeft, .pricing__professional .columLeft, .pricing__basic .columLeft {
   display: inline-block;
   width: 45%;
 }
-
-.pricing__premium .columLeft__name,
-.pricing__professional .columLeft__name,
-.pricing__basic .columLeft__name {
+.pricing__premium .columLeft__name, .pricing__professional .columLeft__name, .pricing__basic .columLeft__name {
   font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.3rem;
 }
-
-.pricing__premium .columLeft__price,
-.pricing__professional .columLeft__price,
-.pricing__basic .columLeft__price {
+.pricing__premium .columLeft__price, .pricing__professional .columLeft__price, .pricing__basic .columLeft__price {
   font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 3.5rem;
 }
-
-.pricing__premium .columLeft__timeLimit,
-.pricing__professional .columLeft__timeLimit,
-.pricing__basic .columLeft__timeLimit {
+.pricing__premium .columLeft__timeLimit, .pricing__professional .columLeft__timeLimit, .pricing__basic .columLeft__timeLimit {
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1rem;
 }
-
-.pricing__premium .columRight,
-.pricing__professional .columRight,
-.pricing__basic .columRight {
+.pricing__premium .columRight, .pricing__professional .columRight, .pricing__basic .columRight {
   display: inline-block;
   width: 45%;
   list-style: none;
@@ -481,16 +399,10 @@ header .nav__menu__item--mobile:hover {
   font-weight: 400;
   line-height: 1.25rem;
 }
-
-.pricing__premium .columRight__item,
-.pricing__professional .columRight__item,
-.pricing__basic .columRight__item {
+.pricing__premium .columRight__item, .pricing__professional .columRight__item, .pricing__basic .columRight__item {
   margin-bottom: 1.3em;
 }
-
-.pricing__premium .button,
-.pricing__professional .button,
-.pricing__basic .button {
+.pricing__premium .button, .pricing__professional .button, .pricing__basic .button {
   padding: 1em 1.3em;
   width: 40%;
   border-radius: 23px;
@@ -510,7 +422,6 @@ header .nav__menu__item--mobile:hover {
   padding: 3em 2em;
   position: relative;
 }
-
 .pricing__title {
   padding: 2em 0 0.6em 0;
   font-family: "Raleway", sans-serif;
@@ -518,71 +429,53 @@ header .nav__menu__item--mobile:hover {
   font-weight: 400;
   line-height: 2.5rem;
 }
-
 .pricing__basic {
   margin-bottom: 2.5em;
   border: 1px solid #FB3B64;
 }
-
 .pricing__basic .columLeft {
   transform: translate(-10%, -80%);
 }
-
 .pricing__basic .columLeft__price {
   color: #FB3B64;
 }
-
 .pricing__basic .button {
   background-color: #EB476E;
 }
-
 .pricing__professional {
   margin-bottom: 2.5em;
   border: 1px solid #07ACE6;
 }
-
 .pricing__professional .columLeft {
   transform: translate(-5%, -50%);
 }
-
 .pricing__professional .columLeft__price {
   color: #07ACE6;
 }
-
 .pricing__professional .button {
   background-color: #07ACE6;
 }
-
 .pricing__premium {
   border: 1px solid #55DFB4;
 }
-
 .pricing__premium .columLeft {
   transform: translate(-5%, -50%);
 }
-
 .pricing__premium .columLeft__price {
   color: #55DFB4;
 }
-
 .pricing__premium .button {
   background-color: #55DFB4;
 }
-
-.pricing__basic:hover,
-.pricing__professional:hover,
-.pricing__premium:hover {
+.pricing__basic:hover, .pricing__professional:hover, .pricing__premium:hover {
   transform: scale(1.1);
 }
-
 .pricing__basic:hover {
   box-shadow: 5px 10px 27px 0px rgba(235, 71, 110, 0.2901960784);
 }
-
 .pricing__professional:hover {
   box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
 }
-
 .pricing__premium:hover {
   box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 0.2901960784);
 }
@@ -592,47 +485,30 @@ header .nav__menu__item--mobile:hover {
     display: flex;
     gap: 10%;
   }
-
-  .pricing__basic,
-  .pricing__professional,
-  .pricing__premium {
+  .pricing__basic, .pricing__professional, .pricing__premium {
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5%;
   }
-
-  .pricing__basic .columLeft,
-  .pricing__professional .columLeft,
-  .pricing__premium .columLeft {
+  .pricing__basic .columLeft, .pricing__professional .columLeft, .pricing__premium .columLeft {
     transform: none;
   }
-
-  .pricing__basic .columLeft__name,
-  .pricing__professional .columLeft__name,
-  .pricing__premium .columLeft__name {
+  .pricing__basic .columLeft__name, .pricing__professional .columLeft__name, .pricing__premium .columLeft__name {
     margin-bottom: 1em;
   }
-
-  .pricing__basic .columRight,
-  .pricing__professional .columRight,
-  .pricing__premium .columRight {
+  .pricing__basic .columRight, .pricing__professional .columRight, .pricing__premium .columRight {
     text-align: center;
     padding: 4em 0 4em 0;
   }
-
-  .pricing__basic .button,
-  .pricing__professional .button,
-  .pricing__premium .button {
+  .pricing__basic .button, .pricing__professional .button, .pricing__premium .button {
     top: 95%;
   }
 }
-
 .contact {
   padding: 2em;
 }
-
 .contact__title {
   font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
@@ -641,7 +517,6 @@ header .nav__menu__item--mobile:hover {
   text-align: left;
   margin-bottom: 0.25em;
 }
-
 .contact__subTitle {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -650,14 +525,10 @@ header .nav__menu__item--mobile:hover {
   text-align: left;
   padding-bottom: 2em;
 }
-
 .contact__us {
   padding: 2em 0 2em;
 }
-
-.contact__us__email,
-.contact__us__numberPhone,
-.contact__us__linkedin {
+.contact__us__email, .contact__us__numberPhone, .contact__us__linkedin {
   padding: 0.5em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -666,37 +537,26 @@ header .nav__menu__item--mobile:hover {
   text-align: left;
   color: #A5A5A5;
 }
-
-.contact__us__email__icon,
-.contact__us__numberPhone__icon,
-.contact__us__linkedin__icon {
+.contact__us__email__icon, .contact__us__numberPhone__icon, .contact__us__linkedin__icon {
   display: inline;
   vertical-align: middle;
 }
-
-.contact__us__email__text,
-.contact__us__numberPhone__text,
-.contact__us__linkedin__text {
+.contact__us__email__text, .contact__us__numberPhone__text, .contact__us__linkedin__text {
   display: inline;
   vertical-align: middle;
 }
-
 .contact__us__linkedin__text {
   text-decoration: none;
 }
-
 .contact__us__linkedin__text:hover {
   font-weight: bold;
 }
-
 .contact__us__linkedin__text:visited {
   color: #A5A5A5;
 }
-
 .contact__client {
   text-align: left;
 }
-
 .contact__client__label {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
@@ -706,7 +566,6 @@ header .nav__menu__item--mobile:hover {
   color: #08A6E4;
   margin-bottom: 3em;
 }
-
 .contact__client__fillInput {
   border: none;
   border-bottom: 1px solid #95989A;
@@ -716,16 +575,13 @@ header .nav__menu__item--mobile:hover {
   width: 100%;
   margin-bottom: 3em;
 }
-
 .contact__client__fillInput--inputError {
   border-bottom-color: red;
 }
-
 .contact__client__checkTerms {
   display: inline-block;
   vertical-align: top;
 }
-
 .contact__client__terms {
   display: inline-block;
   width: 90%;
@@ -737,7 +593,6 @@ header .nav__menu__item--mobile:hover {
   color: #707070;
   margin-bottom: 3em;
 }
-
 .contact__client__submit {
   display: block;
   margin-left: auto;
@@ -762,64 +617,48 @@ header .nav__menu__item--mobile:hover {
     display: flex;
     justify-content: center;
   }
-
   .contact__title {
     margin-bottom: 0.5em;
   }
-
   .contact__subTitle {
     padding-bottom: 1em;
     margin-bottom: 2em;
   }
-
   .contact__us {
     padding: 0;
     width: 35%;
     text-align: left;
   }
-
-  .contact__us__email,
-  .contact__us__numberPhone,
-  .contact__us__linkedin {
+  .contact__us__email, .contact__us__numberPhone, .contact__us__linkedin {
     display: inline-block;
   }
-
-  .contact__us__email__text,
-  .contact__us__numberPhone__text,
-  .contact__us__linkedin__text {
+  .contact__us__email__text, .contact__us__numberPhone__text, .contact__us__linkedin__text {
     margin-right: 2em;
   }
-
   .contact__us__linkedin {
     padding: 1em 0;
   }
-
   .contact__us__linkedin__icon {
     width: 5%;
   }
-
   .contact__client {
     width: 30%;
   }
-
   .contact__client__submit {
     border-radius: 30px;
     width: 50%;
   }
 }
-
 footer {
   padding: 1em;
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
 }
-
 footer .footer__data {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
   width: 45%;
 }
-
 footer .footer__data__title {
   font-family: "Raleway", sans-serif;
   font-size: 1.7rem;
@@ -827,7 +666,6 @@ footer .footer__data__title {
   line-height: 2rem;
   color: #08A6E4;
 }
-
 footer .footer__data__subtitle {
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
@@ -835,14 +673,12 @@ footer .footer__data__subtitle {
   line-height: 0.8rem;
   color: #A5A5A5;
 }
-
 footer .footer__redes {
   display: inline-block;
   text-align: right;
   vertical-align: middle;
   width: 45%;
 }
-
 footer .footer__redes__icon {
   margin-left: 1em;
 }
@@ -860,29 +696,24 @@ footer .footer__redes__icon {
   border: 4px solid #bd5e27;
   border-radius: 10%;
 }
-
 .popUp__containerCross {
   cursor: pointer;
 }
-
 .popUp__containerCross--image {
   position: absolute;
   width: 10%;
   top: 5%;
   left: 80%;
 }
-
 .popUp__title {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 41px;
 }
-
 .popUp__form {
   padding: 4em 0em;
 }
-
 .popUp__form--label {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
@@ -891,12 +722,10 @@ footer .footer__redes__icon {
   letter-spacing: 0.2rem;
   margin-bottom: 3em;
 }
-
 .popUp__form--input {
   padding: 5px 0;
   border: 2px solid black;
 }
-
 .popUp__form--button {
   margin: 1em;
   padding: 0.6em 1.3em;
@@ -919,7 +748,6 @@ footer .footer__redes__icon {
     top: 35%;
     left: 35%;
   }
-
   .popUp__containerCross--image {
     width: 5%;
     left: 90%;
