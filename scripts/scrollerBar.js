@@ -1,4 +1,5 @@
 const scrollerBar = document.querySelector('.scroller__bar--x')
+const arrowScroller = document.querySelector('.scrollerUp')
 
 document.addEventListener("scroll", () => {
     let h = document.documentElement || document.body // height del documento, Tanto para aquel que disponga de acceso a la etiqueta html como para el que simplemente accede mediante el body
@@ -14,8 +15,24 @@ document.addEventListener("scroll", () => {
     }
     else scrollerBar.style.padding = "0em"
 
-    if (percent >= 25) {
-        if (!localStorage.getItem("popUp")) popUp_Modal()
-        else return
+    if ((percent >= 25) && (!localStorage.getItem("popUp"))) {
+        popUp_Modal()
     }
+
+    if (percent > 50 && !arrowScroller.classList.contains('scrollerUp--visible')) {
+        arrowScroller.classList.toggle('scrollerUp--visible')
+    }
+
+    if (percent <= 50 && arrowScroller.classList.contains('scrollerUp--visible')) {
+        arrowScroller.classList.remove('scrollerUp--visible')
+    }
+})
+
+arrowScroller.addEventListener('click', () => {
+    setTimeout(() => {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        })
+    }, 200)
 })
