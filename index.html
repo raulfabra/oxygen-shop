@@ -187,16 +187,30 @@
             <button class="button">Begin</button>
         </article>
     </section>
-    <div id="slider">
+    <div class="slider">
         <div class="slides">
-            <img class="slides__image" src="./public/images/iso-republic-image-1.jpg" alt="image-1">
-            <img class="slides__image" src="./public/images/iso-republic-image-2.jpg" alt="image-2">
-            <img class="slides__image" src="./public/images/iso-republic-image-3.jpg" alt="image-3">
-            <img class="slides__image" src="./public/images/iso-republic-image-4.jpg" alt="image-4">
-            <img class="slides__image" src="./public/images/iso-republic-image-5.jpg" alt="image-5">
+            <div class="slide">
+                <img class="slide--image" src="./public/images/iso-republic-image-1.jpg" alt="image-1">
+            </div>
+            <div class="slide">
+                <img class="slide--image" src="./public/images/iso-republic-image-2.jpg" alt="image-2">
+            </div>
+            <div class="slide">
+                <img class="slide--image" src="./public/images/iso-republic-image-4.jpg" alt="image-4">
+            </div>
+            <div class="slide">
+                <img class="slide--image" src="./public/images/iso-republic-image-6.jpg" alt="image-6">
+            </div>
         </div>
-        <button class="slides__button slides__button--prev">&#10094</button>
-        <button class="slides__button slides__button--next">&#10095</button>
+        <button class="slide__button--prev">&#10094</button>
+        <button class="slide__button--next">&#10095</button>
+        <div class="dots">
+            <span class="dot--active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+        </div>
     </div>
     <section class="contact">
         <article class="contact__us">
@@ -219,10 +233,12 @@
         </article>
         <form action="/" class="contact__client">
             <label for="name" class="contact__client__label">NAME</label>
-            <input type="text" name="name" id="name" class="contact__client__fillInput" />
+            <input type="text" name="name" id="name" class="contact__client__fillInput" minlength="2" maxlength="100"
+                pattern="[^\d]*" title="No se permiten números" />
 
             <label for="email" class="contact__client__label">EMAIL</label>
-            <input type="email" name="email" id="email" class="contact__client__fillInput" />
+            <input type="email" name="email" id="email" class="contact__client__fillInput"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
 
             <input type="checkbox" name="terms" id="terms" class="contact__client__checkTerms" required />
             <label for="terms" class="contact__client__terms">I hereby give consent for my personal data included in my
