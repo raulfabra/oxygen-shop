@@ -49,7 +49,10 @@ class HTMLElement {
                     {
                         email: email.value
                     }
-                ).then(data => console.log(data))
+                ).then(data => {
+                    alert("You are inscribed successfully!! You're Welcome")
+                    document.querySelector('.popUp').remove()
+                })
             }
             else email.style.borderColor = 'red'
         })
