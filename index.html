@@ -232,12 +232,10 @@
         </article>
         <form action="/" class="contact__client">
             <label for="name" class="contact__client__label">NAME</label>
-            <input type="text" name="name" id="name" class="contact__client__fillInput" minlength="2" maxlength="100"
-                pattern="[^\d]*" title="No se permiten números" />
+            <input type="text" name="name" id="name" class="contact__client__fillInput" />
 
             <label for="email" class="contact__client__label">EMAIL</label>
-            <input type="email" name="email" id="email" class="contact__client__fillInput"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+            <input type="email" name="email" id="email" class="contact__client__fillInput" />
 
             <input type="checkbox" name="terms" id="terms" class="contact__client__checkTerms" required />
             <label for="terms" class="contact__client__terms">I hereby give consent for my personal data included in my

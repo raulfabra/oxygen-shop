@@ -6,9 +6,9 @@ formulario.addEventListener('submit', (event) => {
 
     // Validar Input Name
     const nombre = event.target.elements['name']
-    const regexName = new RegExp(/\d/)
+    const regexName = new RegExp(/^[^\d]*$/)
 
-    if (nombre.value.length < 2 || nombre.value.length > 100 || regexName.test(nombre)) {
+    if (nombre.value.length < 2 || nombre.value.length > 100 || !regexName.test(nombre.value)) {
         nombre.classList.add("contact__client__fillInput--inputError")
     }
     else nombre.classList.remove("contact__client__fillInput--inputError")
