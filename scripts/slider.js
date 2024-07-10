@@ -1,54 +1,37 @@
-document.addEventListener('DOMContentLoaded', () => {
-    localStorage.clear()
+class Slider {
 
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const slidess = document.querySelector('.slides')
-    const totalSlides = slides.length;
+    constructor(slideClass, slidesClass) {
+        this.currentIndex = 0
+        this.slide = document.querySelectorAll(slideClass)
+        this.slides = document.querySelector(slidesClass)
+    }
 
-    document.querySelector('.slide__button--next').addEventListener('click', () => {
-        index = currentIndex + 1
+    getSlider(idHTML) {
+        return document.getElementById(idHTML)
+    }
 
-        if (index < 0) {
-            currentIndex = totalSlides - 1
-        } else if (index >= totalSlides) {
-            currentIndex = 0
+    pressNext(next) { this.autoSlide(next) }
+
+    pressPrev(prev) { this.autoSlide(prev) }
+
+    autoSlide(displace) {
+        let indexSlider
+        if (displace === 'next') indexSlider = this.currentIndex + 1
+        else if (displace === 'prev') indexSlider = this.currentIndex - 1
+        else indexSlider = undefined
+
+        let totalSlides = this.slide.length
+
+        if (indexSlider < 0) {
+            this.currentIndex = totalSlides - 1;
+        } else if (indexSlider >= totalSlides) {
+            this.currentIndex = 0;
         } else {
-            currentIndex = index
+            this.currentIndex = indexSlider;
         }
 
-        const offset = -currentIndex * 100 + '%'
-        slidess.style.transform = `translateX(${offset})`
-    })
-    document.querySelector('.slide__button--prev').addEventListener('click', () => {
+        const offset = -this.currentIndex * 100 + '%';
+        this.slides.style.transform = `translateX(${offset})`;
 
-        index = currentIndex - 1
-
-        if (index < 0) {
-            currentIndex = totalSlides - 1
-        } else if (index >= totalSlides) {
-            currentIndex = 0
-        } else {
-            currentIndex = index
-        }
-
-        const offset = -currentIndex * 100 + '%';
-        slidess.style.transform = `translateX(${offset})`;
-    })
-
-    setInterval(() => {
-        index = currentIndex + 1
-
-        if (index < 0) {
-            currentIndex = totalSlides - 1;
-        } else if (index >= totalSlides) {
-            currentIndex = 0;
-        } else {
-            currentIndex = index;
-        }
-
-        const offset = -currentIndex * 100 + '%';
-        slidess.style.transform = `translateX(${offset})`;
-
-    }, 3000);
-})
+    }
+}
