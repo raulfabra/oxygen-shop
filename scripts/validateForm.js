@@ -34,6 +34,12 @@ formulario.addEventListener('submit', (event) => {
                 name: nombre.value,
                 email: email.value
             }
-        ).then(data => console.log(data))
+        ).then(data => {
+            alert("You're email was send successfully. Welcome!")
+            window.scroll({
+                top: 0,
+                behavior: "smooth"
+            })
+        })
     }
 })
