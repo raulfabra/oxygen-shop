@@ -4,6 +4,7 @@ class Slider {
         this.currentIndex = 0
         this.slide = document.querySelectorAll(slideClass)
         this.slides = document.querySelector(slidesClass)
+        this.dots = document.querySelectorAll('.dot')
     }
 
     getSlider(idHTML) {
@@ -33,5 +34,13 @@ class Slider {
         const offset = -this.currentIndex * 100 + '%';
         this.slides.style.transform = `translateX(${offset})`;
 
+        this.dots[this.currentIndex].classList.toggle('dot--active')
+
+        if (this.currentIndex - 1 >= 0 && this.currentIndex < 4) {
+            this.dots[this.currentIndex - 1].classList.toggle('dot--active')
+        }
+        if (this.currentIndex - 1 < 0) {
+            this.dots[3].classList.toggle('dot--active')
+        }
     }
 }
