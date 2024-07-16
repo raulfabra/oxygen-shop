@@ -704,7 +704,7 @@ header .nav__menu__item--mobile:hover {
   cursor: pointer;
 }
 .dot--active {
-  background-color: #717171;
+  background-color: #FB3B64;
 }
 
 @media only screen and (min-width: 1000px) {
